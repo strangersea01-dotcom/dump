@@ -1,0 +1,581 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 13, 2019 at 03:18:55 IST
+irun
+	-access +rwc
+	-f pinaka_fp_flist.f
+		../rtl/common/axi_master_wrapper/axi_wrapper_top.v
+		../rtl/common/axi_master_wrapper/axi_rw_engine.v
+		../rtl/common/axi_slave_with_data_memory/axi_4lite_slave.v
+		../rtl/common/axi_slave_with_data_memory/axi_datamem_wrapper.v
+		../rtl/common/axi_slave_with_instruction_memory/instruction_memory_wrapper.sv
+		../rtl/common/mem/instruction_memory.v
+		../rtl/common/mem/data_memory.v
+		../rtl/core/CONTROL.v
+		../rtl/core/conversion.v
+		../rtl/core/DECODER.v
+		../rtl/core/ex_mem_pipeline.v
+		../rtl/core/ex_stage.v
+		../rtl/core/fadd.v
+		../rtl/core/fdiv.v
+		../rtl/core/feq.v
+		../rtl/core/flt.v
+		../rtl/core/fmax.v
+		../rtl/core/fmin.v
+		../rtl/core/fmul.v
+		../rtl/core/forward_mux.v
+		../rtl/core/forward.v
+		../rtl/core/fp2int.v
+		../rtl/core/fp_reg.v
+		../rtl/core/fsqrt.v
+		../rtl/core/fsub.v
+		../rtl/core/hazard.v
+		../rtl/core/id_ex_pipeline.v
+		../rtl/core/id_stage.v
+		../rtl/core/if_id_pipeline.v
+		../rtl/core/if_stage.v
+		../rtl/core/int2fp.v
+		../rtl/core/int_reg.v
+		../rtl/core/leq.v
+		../rtl/core/mem_stage.v
+		../rtl/core/mem_wb_pipeline.v
+		../rtl/core/move.v
+		../rtl/core/normalization.v
+		../rtl/core/pc.v
+		../rtl/core/ripple_carry_adder.v
+		../rtl/core/top_alu.v
+		../rtl/core/wb_stage.v
+		../rtl/core/final_integrate_top.v
+		../rtl/core/rtl_trace_bind.sv
+		./axi_typedef_pkg.sv
+		../rtl/top/pinaka_fp.sv
+		./pinaka_fp_tb.sv
+		./fp_reference.c
+file: ../rtl/common/axi_slave_with_instruction_memory/instruction_memory_wrapper.sv
+	module worklib.instruction_mem_wrapper:sv
+		errors: 0, warnings: 0
+file: ../rtl/core/fsqrt.v
+module FloatingAddition (input [31:0]A,
+                      |
+ncvlog: *W,RECOME (../rtl/core/fsqrt.v,852|22): recompiling design unit worklib.FloatingAddition:v.
+	First compiled from line 2 of ../rtl/core/fsqrt.v.
+file: ../rtl/core/int2fp.v
+                    if (mantissa == 23'h800000) begin
+                                             |
+ncvlog: *W,INTOVF (../rtl/core/int2fp.v,203|45): bit overflow during conversion from text [2.5(IEEE)] (23 bits).
+file: ../rtl/core/rtl_trace_bind.sv
+	module worklib.rtl_trace_bind:sv
+		errors: 0, warnings: 0
+file: ../rtl/top/pinaka_fp.sv
+	module worklib.pinaka_fp:sv
+		errors: 0, warnings: 0
+file: ./pinaka_fp_tb.sv
+	module worklib.tb_pinaka_fp:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		axi_typedef_pkg
+		$unit_0x310c21a8
+		fp_norm_round
+		tb_pinaka_fp
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+.address    (addr),
+                |
+ncelab: *W,CUVMPW (../rtl/common/axi_slave_with_instruction_memory/instruction_memory_wrapper.sv,24|16): port sizes differ in port connection (16/15).
+        .illegal_address        (illegal_address)                               ,
+                                               |
+ncelab: *W,CUVMPW (../rtl/top/pinaka_fp.sv,169|47): port sizes differ in port connection (32/1).
+    .addr      (pc_out[16:2]),
+                     |
+ncelab: *W,CUVMPW (../rtl/top/pinaka_fp.sv,99|21): port sizes differ in port connection (15/16).
+.address    (mem_wr_addr_mux[DATA_MEMORY_ADDR_WIDTH-1:2]),
+                           |
+ncelab: *W,CUVMPW (../rtl/common/axi_slave_with_data_memory/axi_datamem_wrapper.v,144|27): port sizes differ in port connection (14/16).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.FloatingSqrt:v <0x6a34c8e2>
+			streams:  12, words:  5702
+		worklib.feq:v <0x51af385d>
+			streams:   5, words:  1969
+		worklib.fle:v <0x574ad739>
+			streams:   7, words:  2657
+		worklib.flt:v <0x28f82f80>
+			streams:   7, words:  2642
+		worklib.fmax:v <0x5a5599c2>
+			streams:   7, words:  3017
+		worklib.fmin:v <0x4c63a67a>
+			streams:   7, words:  2906
+		worklib.fp_adder:v <0x3758d2b8>
+			streams:  18, words: 11551
+		worklib.fp_alu:v <0x671e2e20>
+			streams:   1, words:  2822
+		worklib.fp_mul:v <0x184ffa05>
+			streams:  12, words:  3774
+		worklib.fp_scaler:v <0x3102e5f9>
+			streams:   6, words:  1191
+		worklib.fp_sub:v <0x4cdcaf12>
+			streams:  19, words: 11752
+		worklib.fp_z0_init:v <0x599e296c>
+			streams:   1, words:   151
+		worklib.instruction_mem_wrapper:sv <0x21d29eac>
+			streams:   2, words:   303
+		worklib.nr_fp_div_top:v <0x16c123b6>
+			streams:  20, words:  9515
+		worklib.pinaka_fp:sv <0x69d066f7>
+			streams:   6, words:   982
+		worklib.rtl_trace_bind:sv <0x4fae0d6d>
+			streams:   8, words:  7969
+		worklib.tb_pinaka_fp:sv <0x4d53bb41>
+			streams:   6, words:  2721
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		               Instances  Unique
+		Modules:             154      57
+		Verilog packages:      1       1
+		Registers:           982     268
+		Scalar wires:        486       -
+		Expanded wires:      160       5
+		Vectored wires:      625       -
+		Always blocks:       139      64
+		Initial blocks:        7       7
+		Final blocks:          1       1
+		Cont. assignments:   344     364
+		Pseudo assignments:   91      48
+		Compilation units:     1       1
+	Writing initial simulation snapshot: worklib.fp_norm_round:v
+Loading snapshot worklib.fp_norm_round:v .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+RTL trace logging started
+Loading HEX File =                                                              /home/vv2trainee25/Desktop/shashank/FPU_work/FP/SIM/fpu_test_sh.hex
+ncsim: *W,RMEMNOF: $readmem error: open failed on file "/home/vv2trainee25/Desktop/shashank/FPU_work/FP/SIM/fpu_test_sh.hex".
+            File: ../rtl/common/mem/instruction_memory.v, line = 36, pos = 24
+           Scope: tb_pinaka_fp.DUT.u_instruction_mem_wrapper.u_inst_memory
+            Time: 0 FS + 0
+
+========== RTL INSTRUCTION MEMORY ==========
+mem[0] = xxxxxxxx
+mem[1] = xxxxxxxx
+mem[2] = xxxxxxxx
+mem[3] = xxxxxxxx
+mem[4] = xxxxxxxx
+============================================
+IF/ID : PC=00000000 INST=xxxxxxxx
+IF/ID : PC=00000000 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000000 INST=00000000
+IF/ID : PC=00000000 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000000 INST=xxxxxxxx
+IF/ID : PC=00000004 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000004 INST=xxxxxxxx
+IF/ID : PC=00000008 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000008 INST=xxxxxxxx
+IF/ID : PC=0000000c INST=xxxxxxxx
+RTL TRACE PUSH : PC=0000000c INST=xxxxxxxx
+IF/ID : PC=00000010 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000010 INST=xxxxxxxx
+IF/ID : PC=00000014 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000014 INST=xxxxxxxx
+IF/ID : PC=00000018 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000018 INST=xxxxxxxx
+IF/ID : PC=0000001c INST=xxxxxxxx
+RTL TRACE PUSH : PC=0000001c INST=xxxxxxxx
+IF/ID : PC=00000020 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000020 INST=xxxxxxxx
+IF/ID : PC=00000024 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000024 INST=xxxxxxxx
+IF/ID : PC=00000028 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000028 INST=xxxxxxxx
+IF/ID : PC=0000002c INST=xxxxxxxx
+RTL TRACE PUSH : PC=0000002c INST=xxxxxxxx
+IF/ID : PC=00000030 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000030 INST=xxxxxxxx
+IF/ID : PC=00000034 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000034 INST=xxxxxxxx
+IF/ID : PC=00000038 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000038 INST=xxxxxxxx
+IF/ID : PC=0000003c INST=xxxxxxxx
+RTL TRACE PUSH : PC=0000003c INST=xxxxxxxx
+IF/ID : PC=00000040 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000040 INST=xxxxxxxx
+IF/ID : PC=00000044 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000044 INST=xxxxxxxx
+IF/ID : PC=00000048 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000048 INST=xxxxxxxx
+IF/ID : PC=0000004c INST=xxxxxxxx
+RTL TRACE PUSH : PC=0000004c INST=xxxxxxxx
+IF/ID : PC=00000050 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000050 INST=xxxxxxxx
+IF/ID : PC=00000054 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000054 INST=xxxxxxxx
+IF/ID : PC=00000058 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000058 INST=xxxxxxxx
+IF/ID : PC=0000005c INST=xxxxxxxx
+RTL TRACE PUSH : PC=0000005c INST=xxxxxxxx
+IF/ID : PC=00000060 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000060 INST=xxxxxxxx
+IF/ID : PC=00000064 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000064 INST=xxxxxxxx
+IF/ID : PC=00000068 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000068 INST=xxxxxxxx
+IF/ID : PC=0000006c INST=xxxxxxxx
+RTL TRACE PUSH : PC=0000006c INST=xxxxxxxx
+IF/ID : PC=00000070 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000070 INST=xxxxxxxx
+IF/ID : PC=00000074 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000074 INST=xxxxxxxx
+IF/ID : PC=00000078 INST=xxxxxxxx
+RTL TRACE PUSH : PC=00000078 INST=xxxxxxxx
+IF/ID : PC=0000007c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000080 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000084 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000088 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000008c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000090 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000094 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000098 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000009c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000a0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000a4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000a8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000ac INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000b0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000b4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000b8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000bc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000c0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000c4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000c8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000cc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000d0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000d4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000d8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000dc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000e0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000e4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000e8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000ec INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000f0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000f4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000f8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000000fc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000100 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000104 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000108 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000010c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000110 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000114 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000118 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000011c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000120 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000124 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000128 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000012c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000130 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000134 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000138 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000013c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000140 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000144 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000148 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000014c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000150 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000154 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000158 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000015c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000160 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000164 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000168 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000016c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000170 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000174 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000178 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000017c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000180 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000184 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000188 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000018c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000190 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000194 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000198 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000019c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001a0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001a4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001a8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001ac INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001b0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001b4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001b8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001bc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001c0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001c4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001c8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001cc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001d0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001d4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001d8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001dc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001e0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001e4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001e8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001ec INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001f0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001f4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001f8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000001fc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000200 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000204 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000208 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000020c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000210 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000214 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000218 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000021c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000220 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000224 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000228 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000022c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000230 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000234 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000238 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000023c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000240 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000244 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000248 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000024c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000250 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000254 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000258 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000025c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000260 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000264 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000268 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000026c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000270 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000274 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000278 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000027c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000280 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000284 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000288 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000028c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000290 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000294 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000298 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000029c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002a0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002a4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002a8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002ac INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002b0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002b4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002b8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002bc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002c0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002c4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002c8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002cc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002d0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002d4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002d8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002dc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002e0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002e4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002e8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002ec INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002f0 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002f4 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002f8 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=000002fc INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000300 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000304 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000308 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000030c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000310 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000314 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000318 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000031c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000320 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000324 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000328 INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=0000032c INST=xxxxxxxx
+ERROR: RTL trace FIFO overflow
+IF/ID : PC=00000330 INST=xxxxxxxx
+Simulation complete via $finish(1) at time 2070 NS + 0
+./pinaka_fp_tb.sv:33     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 13, 2019 at 03:18:56 IST  (total: 00:00:01)
