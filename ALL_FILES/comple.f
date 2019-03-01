@@ -1,0 +1,17 @@
+bit_rol.v
+bit_zip.v
+bit_unzip.v
+bit_ror.v
+bit_rori.v
+bit_orn.v
+bit_xnor.v
+bit_pack.v
+bit_packh.v
+bit_brev.v
+bit_rev8.v
+bit_andn.v
+bitmanipulation.v
+carry_less_multiplication.v
+carry_less_engine.v
+crypto_engine.v
+crypto_engine_tb.v

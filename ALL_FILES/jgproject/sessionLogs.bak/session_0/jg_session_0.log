@@ -1,0 +1,262 @@
+# ----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2019.12
+# platform  : Linux 3.10.0-1160.119.1.el7.x86_64
+# version   : 2019.12p002 64 bits
+# build date: 2020.02.27 18:30:54 PST
+# ----------------------------------------
+# started   : 2023-02-15 01:57:17 IST
+# hostname  : compute-srv5.atme.in.eda.atme.in
+# pid       : 34229
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:44915' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEUAAAAAAAAB4A==' '-proj' '/home/sgeuser118/Desktop/pipelining/RTL/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/sgeuser118/Desktop/pipelining/RTL/jgproject/.tmp/.initCmds.tcl' 'riscv_lint_automation.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2020 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/sgeuser118/Desktop/pipelining/RTL/jgproject/sessionLogs/session_0
+
+/home/sgeuser118/Desktop/pipelining/RTL/jgproject/jg.log
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_afl".
+INFO: reading configuration file "/home/sgeuser118/.config/jasper/jaspergold.conf".
+% check_superlint -init
+INFO (INL204): Disabling pipeline elaboration since it is not supported in Superlint App.
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% ##################################################################################################################
+% #setup the rule
+%  config_rtlds -rule -enable -domain {LINT}
+%  config_rtlds -rule -disable -domain {AUTO_FORMAL}
+%  config_rtlds -rule -disable -category {NAMING FILEFORMAT}
+% 
+% ##############################RTL_LOAD##############################################
+% #analyze -verilog -f /home/sgeuser118/Desktop/RISC-V_SCALAR_CYRPTOGRAPHY/Final_folder/RISC-V_SCALAR_CYRPTOGRAPHY/pc_compile.f
+% ##analyze -verilog -f /home/sgeuser118/Desktop/RISC-V_SCALAR_CYRPTOGRAPHY/Final_folder/RISC-V_SCALAR_CYRPTOGRAPHY/lint_compile.f
+% analyze -verilog -f /home/sgeuser118/Desktop/pipelining/RTL/pc_compile.f
+[-- (VERI-1482)] Analyzing Verilog file 'riscv_scalar_cryptography_processor.v'
+[-- (VERI-1482)] Analyzing Verilog file 'pc.v'
+[-- (VERI-1482)] Analyzing Verilog file 'pc_top.v'
+[-- (VERI-1482)] Analyzing Verilog file 'pc_adder.v'
+[-- (VERI-1482)] Analyzing Verilog file 'im_mem0.v'
+[-- (VERI-1482)] Analyzing Verilog file 'im_mem1.v'
+[-- (VERI-1482)] Analyzing Verilog file 'im_mem2.v'
+[-- (VERI-1482)] Analyzing Verilog file 'im_mem3.v'
+[-- (VERI-1482)] Analyzing Verilog file 'im_mem_top.v'
+[-- (VERI-1482)] Analyzing Verilog file 'Fetch_cycle.v'
+[-- (VERI-1482)] Analyzing Verilog file 'instruction_parser.v'
+[-- (VERI-1482)] Analyzing Verilog file 'riscv_control_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'sign_extend.v'
+[-- (VERI-1482)] Analyzing Verilog file 'register_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'decoder_cycle.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mux_21.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_rol.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_zip.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_unzip.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_ror.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_rori.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_orn.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_xnor.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_pack.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_packh.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_brev.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_rev8.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bit_andn.v'
+[-- (VERI-1482)] Analyzing Verilog file 'bitmanipulation.v'
+[-- (VERI-1482)] Analyzing Verilog file 'carry_less_multiplication.v'
+[-- (VERI-1482)] Analyzing Verilog file 'carry_less_engine.v'
+[-- (VERI-1482)] Analyzing Verilog file 'sbox_values.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mix_op.v'
+[-- (VERI-1482)] Analyzing Verilog file 'aes32esi.v'
+[-- (VERI-1482)] Analyzing Verilog file 'aes32esmi.v'
+[-- (VERI-1482)] Analyzing Verilog file 'aes_engine.v'
+[-- (VERI-1482)] Analyzing Verilog file 'sha256_msg_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'sha256_round.v'
+[-- (VERI-1482)] Analyzing Verilog file 'sha_engine.v'
+[-- (VERI-1482)] Analyzing Verilog file 'crypto_engine.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mux_31.v'
+[-- (VERI-1482)] Analyzing Verilog file 'execute_cycle.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_memory.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_memory_top.v'
+[-- (VERI-1482)] Analyzing Verilog file 'write_back_cycle.v'
+% 
+% ###################################################ELaborate######################################
+% elaborate
+[INFO (HIER-8002)] bit_rori.v(13): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] riscv_scalar_cryptography_processor.v(1): compiling module 'riscv_scalar_cryptography_proscessor'
+[INFO (VERI-1018)] pc_top.v(1): compiling module 'pc_top'
+[INFO (VERI-1018)] pc.v(1): compiling module 'pc'
+[INFO (VERI-1018)] pc_adder.v(10): compiling module 'pc_add'
+[INFO (VERI-1018)] im_mem_top.v(1): compiling module 'instruction_memory_top'
+[INFO (VERI-1018)] im_mem0.v(1): compiling module 'im_mem0'
+[INFO (VERI-1018)] im_mem1.v(1): compiling module 'im_mem1'
+[INFO (VERI-1018)] im_mem2.v(2): compiling module 'im_mem2'
+[INFO (VERI-1018)] im_mem3.v(1): compiling module 'im_mem3'
+[INFO (VERI-1018)] Fetch_cycle.v(1): compiling module 'fetch_cycle'
+[INFO (VERI-1018)] instruction_parser.v(1): compiling module 'instruction_parser'
+[INFO (VERI-1018)] riscv_control_unit.v(1): compiling module 'riscv_control_unit'
+[INFO (VERI-1018)] register_file.v(1): compiling module 'gpr'
+[INFO (VERI-1018)] decoder_cycle.v(1): compiling module 'decode_cycle'
+[INFO (VERI-1018)] sign_extend.v(1): compiling module 'sign_extend'
+[INFO (VERI-1018)] mux_21.v(1): compiling module 'mux'
+[INFO (VERI-1018)] crypto_engine.v(1): compiling module 'crypto_engine'
+[INFO (VERI-1018)] bitmanipulation.v(1): compiling module 'bitmanipulation'
+[INFO (VERI-1018)] bit_rol.v(19): compiling module 'bit_rol'
+[INFO (VERI-1018)] bit_ror.v(38): compiling module 'bit_ror'
+[INFO (VERI-1018)] bit_andn.v(1): compiling module 'bit_andn'
+[INFO (VERI-1018)] bit_orn.v(1): compiling module 'bit_orn'
+[INFO (VERI-1018)] bit_xnor.v(1): compiling module 'bit_xnor'
+[INFO (VERI-1018)] bit_pack.v(1): compiling module 'bit_pack'
+[INFO (VERI-1018)] bit_packh.v(1): compiling module 'bit_packh'
+[INFO (VERI-1018)] bit_zip.v(16): compiling module 'bit_zip'
+[INFO (VERI-1018)] bit_unzip.v(17): compiling module 'bit_unzip'
+[INFO (VERI-1018)] bit_brev.v(1): compiling module 'bit_brev8'
+[INFO (VERI-1018)] bit_rev8.v(1): compiling module 'bit_rev8'
+[INFO (VERI-1018)] carry_less_engine.v(1): compiling module 'carry_less_mul_top'
+[INFO (VERI-1018)] carry_less_multiplication.v(77): compiling module 'carry_less_mul:(WIDTH_IN=32,WIDTH_OUT=64)'
+[INFO (VERI-1018)] aes_engine.v(1): compiling module 'aes_engine'
+[INFO (VERI-1018)] aes32esi.v(1): compiling module 'aes32esi'
+[INFO (VERI-1018)] sbox_values.v(1): compiling module 'aes_sbox'
+[INFO (VERI-1018)] aes32esmi.v(1): compiling module 'aes32esmi'
+[INFO (VERI-1018)] mix_op.v(62): compiling module 'mix_op'
+[INFO (VERI-1018)] sha_engine.v(1): compiling module 'sha_engine'
+[INFO (VERI-1018)] sha256_round.v(51): compiling module 'sha256_round'
+[INFO (VERI-1018)] sha256_msg_datapath.v(56): compiling module 'sha256_msg_datapath'
+[INFO (VERI-1018)] mux_31.v(1): compiling module 'mux31'
+[INFO (VERI-1018)] execute_cycle.v(1): compiling module 'execute_cycle'
+[INFO (VERI-1018)] data_memory_top.v(1): compiling module 'data_memory_top'
+[INFO (VERI-1018)] data_memory.v(1): compiling module 'data_memory'
+[INFO (VERI-1018)] write_back_cycle.v(1): compiling module 'write_back_cycle'
+[INFO (VERI-1018)] bit_rori.v(4): compiling module 'bit_rori'
+INFO (ISW003): Top module name is "riscv_scalar_cryptography_proscessor".
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+riscv_scalar_cryptography_proscessor
+[<embedded>] % #########################################For the gobal signal##################################################
+[<embedded>] % clock clk
+[<embedded>] % reset rst
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst".
+[<embedded>] % ###############################################To run LINT ################################################
+[<embedded>] % check_superlint -extract
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL018): Started building clock tree
+INFO (ISL018): Finished building clock tree
+INFO (ISL018): Started building reset tree
+INFO (ISL018): Finished building reset tree
+INFO (ISL018): Violation Count: Errors = 0 Warnings = 297 Info = 0
+297
+[<embedded>] % ##############################################INS_NR_INPR#####################################################
+[<embedded>] % check_superlint -waiver -add -category STRUCTURAL -tag INS_NR_INPR -comment {Pure combinational logic by design. Output is intended to change immediately with input changes.No state or storage element is required. No impact on synthesis or functionality.No state or storage element is required. No impact on synthesis or functionality} -force
+(1) ( POIType=*  Category=STRUCTURAL  Tag=INS_NR_INPR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+1
+[<embedded>] % ##############################################INS_NR_INPR#####################################################
+[<embedded>] % check_superlint -waiver -add -category STRUCTURAL -tag MOD_NO_IPRG -comment {its is yop module output its not connect to any ff} -force
+(2) ( POIType=*  Category=STRUCTURAL  Tag=MOD_NO_IPRG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+2
+[<embedded>] % ##############################################INS_NR_INPR#####################################################
+[<embedded>] % check_superlint -waiver -add -category STRUCTURAL -tag MOD_NS_GLGC -comment {Yes this is a glue logic . why i am using this because of synthesis to find the critical path} -force
+(3) ( POIType=*  Category=STRUCTURAL  Tag=MOD_NS_GLGC  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+3
+[<embedded>] % 
+[<embedded>] % ############################################MOD_IS_SYAS######################################################
+[<embedded>] % check_superlint -waiver -add -category STRUCTURAL -tag MOD_IS_SYAS -comment {Module intentionally uses synchronous write and asynchronous read memory behavior. Standard memory modeling style with no synthesis or functional impact} -force
+(4) ( POIType=*  Category=STRUCTURAL  Tag=MOD_IS_SYAS  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+4
+[<embedded>] % #############################################NET_NO_LOAD#####################################################
+[<embedded>] % check_superlint -waiver -add -category STRUCTURAL -tag NET_NO_LOAD -comment {NET_NO_LOAD waived because this signal is driven but intentionally not connected to any consuming logic and has no functional impact.} -force
+(5) ( POIType=*  Category=STRUCTURAL  Tag=NET_NO_LOAD  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+5
+[<embedded>] % #############################################OTP_NR_ASYA#####################################################
+[<embedded>] % check_superlint -waiver -add -category CODINGSTYLE -tag OTP_NR_ASYA -comment { OTP_NR_ASYA waived because this output is intentionally driven by pure combinational logic and is not required to be registered; no functional or synthesis impact. } -force
+(6) ( POIType=*  Category=CODINGSTYLE  Tag=OTP_NR_ASYA  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+6
+[<embedded>] % #############################################WIR_NO_READ#####################################################
+[<embedded>] % check_superlint -waiver -add -category CODINGSTYLE -tag WIR_NO_READ -comment { Wire is not used in logical expression. it only used for connect } -force
+(7) ( POIType=*  Category=CODINGSTYLE  Tag=WIR_NO_READ  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+7
+[<embedded>] % #############################################INP_NO_USED#####################################################
+[<embedded>] %  check_superlint -waiver -add -category CODINGSTYLE -tag INP_NO_USED -comment { Unused input bits are intentional due to instruction semantics or address slicing; no functional or synthesis impact.} -force
+(8) ( POIType=*  Category=CODINGSTYLE  Tag=INP_NO_USED  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+8
+[<embedded>] % #############################################ARY_MS_DRNG#####################################################
+[<embedded>] %  check_superlint -waiver -add -category CODINGSTYLE -tag ARY_MS_DRNG -comment {ARY_MS_DRNG waived because mixed packed/unpacked range ordering is intentional and legal Verilog; no functional or synthesis impact.} -force
+(9) ( POIType=*  Category=CODINGSTYLE  Tag=ARY_MS_DRNG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+9
+[<embedded>] % #############################################ASG_MS_RPAD#####################################################
+[<embedded>] %  check_superlint -waiver -add -category CODINGSTYLE -tag ASG_MS_RPAD -comment { Unequal operand width warning waived because operands are intentionally widened for PC increment logic and truncation to XLEN bits is architecturally correct; no functional or synthesis impact. } -force
+(10) ( POIType=*  Category=CODINGSTYLE  Tag=ASG_MS_RPAD  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+10
+[<embedded>] % #############################################CAS_NR_DEFX#####################################################
+[<embedded>] % check_superlint -waiver -add -category CODINGSTYLE -tag CAS_NR_DEFX -comment { CAS_NR_DEFX waived because the default case is intentionally fully specified by prior assignments and outputs are not required to be driven to X; no functional or synthesis impact. } -force
+(11) ( POIType=*  Category=CODINGSTYLE  Tag=CAS_NR_DEFX  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+11
+[<embedded>] % #############################################IDX_NR_DTTY#####################################################
+[<embedded>] % check_superlint -waiver -add -category CODINGSTYLE -tag IDX_NR_DTTY -comment {IDX_NR_DTTY waived because the address used as a memory index is driven from registered control logic and is guaranteed to be a valid 2-state value; no functional or synthesis impact. } -force
+(12) ( POIType=*  Category=CODINGSTYLE  Tag=IDX_NR_DTTY  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+12
+[<embedded>] % #############################################ASG_NR_POVF#####################################################
+[<embedded>] % check_superlint -waiver -add -category CODINGSTYLE -tag ASG_NR_POVF -comment {  ASG_NR_POVF waived because the widened left-shift in rotate logic may trigger conservative overflow detection, but truncation is intentional and functionally correct } -force
+(13) ( POIType=*  Category=CODINGSTYLE  Tag=ASG_NR_POVF  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+13
+[<embedded>] % #############################################OPR_NR_UEAS#####################################################
+[<embedded>] % check_superlint -waiver -add -category CODINGSTYLE -tag OPR_NR_UEAS -comment {  OPR_NR_UEAS waived because subtraction between XLEN and shamt is intentional for rotate logic and width difference has no functional or synthesis impact.
+ } -force
+(14) ( POIType=*  Category=CODINGSTYLE  Tag=OPR_NR_UEAS  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+14
+[<embedded>] % #############################################OTP_UC_INST#####################################################
+[<embedded>] %  check_superlint -waiver -add -category CODINGSTYLE -tag OTP_UC_INST -comment {OTP_UC_INST waived because the unused upper bits of the carry-less multiplication output are intentionally not required for this operation and have no functional or synthesis impact.
+ } -force
+(15) ( POIType=*  Category=CODINGSTYLE  Tag=OTP_UC_INST  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+15
+[<embedded>] % #############################################RESET#####################################################
+[<embedded>] % check_superlint -waiver -add -category SYNTHESIS -tag MOD_NR_ASLD -comment { resest dont have a constant value } -force
+(16) ( POIType=*  Category=SYNTHESIS  Tag=MOD_NR_ASLD  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+16
+[<embedded>] % #check_superlint -waiver -add -category STRUCTURAL -tag FLP_NO_ASRT -comment {Memory arrays are intentionally implemented without asynchronous reset; this matches SRAM behavio} -force
+[<embedded>] % ###################################################FIRE_FOX########################################################
+[<embedded>] % check_superlint -report -violation -property -order category -file /home/sgeuser118/Desktop/pipelining/RTL/Superlint_report.html -force -html -launch_html_browser -detailed -include_design_build
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+INFO (IIM002): *** Stopping all proof jobs ***
+INFO (IIM002): *** Stopping all proof jobs ***
+INFO (IPL005): Received request to exit from the console.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.

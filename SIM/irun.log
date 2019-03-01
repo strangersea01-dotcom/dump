@@ -1,0 +1,181 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 27, 2019 at 13:01:00 IST
+irun
+	-access +rwc
+	-f compile.f
+		../CORE/riscv_scalar_cryptography_processor.v
+		../CORE/pc.v
+		../CORE/pc_top.v
+		../CORE/pc_adder.v
+		../CORE/im_mem0.v
+		../CORE/im_mem1.v
+		../CORE/im_mem2.v
+		../CORE/im_mem3.v
+		../CORE/im_mem_top.v
+		../CORE/Fetch_cycle.v
+		../CORE/riscv_control_unit.v
+		../CORE/sign_extend.v
+		../CORE/register_file.v
+		../CORE/decoder_cycle.v
+		../CORE/mux_21.v
+		../CORE/bit_rol.v
+		../CORE/bit_zip.v
+		../CORE/bit_unzip.v
+		../CORE/bit_ror.v
+		../CORE/bit_rori.v
+		../CORE/bit_orn.v
+		../CORE/bit_xnor.v
+		../CORE/bit_pack.v
+		../CORE/bit_packh.v
+		../CORE/bit_brev.v
+		../CORE/bit_rev8.v
+		../CORE/bit_andn.v
+		../CORE/bitmanipulation.v
+		../CORE/carry_less_multiplication.v
+		../CORE/carry_less_engine.v
+		../CORE/sbox_values.v
+		../CORE/mix_op.v
+		../CORE/aes32esi.v
+		../CORE/aes32esmi.v
+		../CORE/aes_engine.v
+		../CORE/sha256_msg_datapath.v
+		../CORE/sha256_round.v
+		../CORE/sha_engine.v
+		../CORE/crypto_engine.v
+		../CORE/mux_31.v
+		../CORE/execute_cycle.v
+		../CORE/data_memory.v
+		../CORE/data_memory_top.v
+		../CORE/write_back_cycle.v
+		../CORE/hazard_unit.v
+		../CORE/mux31.v
+		../VERIFICATION/RISC_TOP_TB.v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+Recompiling... reason: file '../CORE/data_memory.v' is newer than expected.
+	expected: Wed Feb 27 12:48:18 2019
+	actual:   Wed Feb 27 13:00:37 2019
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+file: ../CORE/im_mem1.v
+	module worklib.im_mem1:v
+		errors: 0, warnings: 0
+file: ../CORE/im_mem2.v
+	module worklib.im_mem2:v
+		errors: 0, warnings: 0
+file: ../CORE/im_mem3.v
+	module worklib.im_mem3:v
+		errors: 0, warnings: 0
+file: ../CORE/register_file.v
+	module worklib.gpr:v
+		errors: 0, warnings: 0
+file: ../CORE/data_memory.v
+	module worklib.data_memory:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	riscv_scalar_cryptography_proscessor dut(.clk(clk),
+	                                       |
+ncelab: *W,CUVWSP (../VERIFICATION/RISC_TOP_TB.v,10|40): 1 output port was not connected:
+ncelab: (../CORE/riscv_scalar_cryptography_processor.v,5): write_out
+
+	Top level design units:
+		bit_rori
+		riscv_scalar_cryptography_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+		worklib.data_memory:v <0x6e8861ca>
+			streams:   5, words:  1827
+		worklib.gpr:v <0x09b7549c>
+			streams:   6, words:  2119
+		worklib.im_mem1:v <0x28614926>
+			streams:   5, words:  2001
+		worklib.im_mem2:v <0x2ecdbd9a>
+			streams:   5, words:  2001
+		worklib.im_mem3:v <0x0ded3112>
+			streams:   5, words:  2001
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		               Instances  Unique
+		Modules:              54      47
+		Registers:            99      95
+		Scalar wires:         18       -
+		Expanded wires:      128      10
+		Vectored wires:      148       -
+		Always blocks:        29      25
+		Initial blocks:       11       8
+		Cont. assignments:    79      75
+		Pseudo assignments:   21      21
+	Writing initial simulation snapshot: worklib.bit_rori:v
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+Loading snapshot worklib.bit_rori:v .................... Done
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation complete via $finish(1) at time 310 NS + 0
+../VERIFICATION/RISC_TOP_TB.v:34 $finish();
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 27, 2019 at 13:01:01 IST  (total: 00:00:01)

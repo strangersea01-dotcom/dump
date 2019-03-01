@@ -1,0 +1,11 @@
+#Version: 17.20-s300 (10-Feb-2018) (64 bit executable)
+ guiWinConfig .a.pane.f3.command.text.text.promt2 67 19 1 -13 
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.a.pane.f2.mesg.text.vsb cget -activebackground]
+	.a.pane.f2.mesg.text.vsb configure -activebackground [.a.pane.f2.mesg.text.vsb cget -background]
+    }
+    .a.pane.f2.mesg.text.vsb activate [.a.pane.f2.mesg.text.vsb identify 2 69]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.a.pane.f2.mesg.text.vsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .a.pane.f2.mesg.text.vsb activate {}

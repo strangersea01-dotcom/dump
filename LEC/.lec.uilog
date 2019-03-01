@@ -1,0 +1,953 @@
+#Version: 17.20-s300 (10-Feb-2018) (64 bit executable)
+callback Gui_hlist_leave .a.pane.f1.middle.revised.fm.tree.f1.hlist
+callback Gui_hlist_leave .a.pane.f1.middle.golden.fm.tree.f1.hlist
+         if { [ .icon.hierCmp cget -state ] == "normal" } {
+            .icon.hierCmp configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.hierCmp
+ .icon.hierCmp configure -relief flat 
+     tk::ButtonLeave .icon.hierCmp
+     tk::MbEnter .v_menu.report
+     tk::MbMotion .v_menu.report up 364 89
+     tk::MbMotion .v_menu.report up 365 81
+     tk::MbMotion .v_menu.report up 367 77
+     tk::MbMotion .v_menu.report up 368 74
+     tk::MbMotion .v_menu.report up 370 71
+     tk::MbMotion .v_menu.report up 371 68
+     tk::MbLeave .v_menu.report
+     tk::MbEnter .v_menu.report
+     tk::MbMotion .v_menu.report up 347 69
+     tk::MbLeave .v_menu.report
+     tk::MbEnter .v_menu.set
+     tk::MbMotion .v_menu.set up 344 70
+     tk::MbMotion .v_menu.set up 342 72
+     tk::MbMotion .v_menu.set up 341 72
+     tk::MbMotion .v_menu.set up 339 74
+     tk::MbMotion .v_menu.set up 337 75
+     tk::MbMotion .v_menu.set up 335 77
+     tk::MbMotion .v_menu.set up 333 78
+     tk::MbMotion .v_menu.set up 333 79
+     tk::MbMotion .v_menu.set up 332 79
+     tk::MbMotion .v_menu.set up 330 80
+     tk::MbMotion .v_menu.set up 330 81
+     tk::MbMotion .v_menu.set up 329 82
+     tk::MbMotion .v_menu.set up 328 82
+     tk::MbMotion .v_menu.set up 327 82
+     tk::MbMotion .v_menu.set up 327 83
+     tk::MbMotion .v_menu.set up 327 84
+     tk::MbMotion .v_menu.set up 326 84
+     tk::MbMotion .v_menu.set up 325 85
+     tk::MbMotion .v_menu.set up 324 85
+     tk::MbMotion .v_menu.set up 323 85
+     tk::MbMotion .v_menu.set up 323 86
+     tk::MbMotion .v_menu.set up 322 86
+     tk::MbMotion .v_menu.set up 321 86
+     tk::MbMotion .v_menu.set up 320 86
+     tk::MbMotion .v_menu.set up 319 86
+     tk::MbMotion .v_menu.set up 318 86
+     tk::MbMotion .v_menu.set up 317 86
+     tk::MbMotion .v_menu.set up 316 86
+     tk::MbMotion .v_menu.set up 316 87
+     tk::MbMotion .v_menu.set up 315 87
+     tk::MbMotion .v_menu.set up 313 87
+     tk::MbMotion .v_menu.set up 313 89
+     tk::MbMotion .v_menu.set up 312 89
+     tk::MbMotion .v_menu.set up 311 89
+     tk::MbMotion .v_menu.set up 310 89
+     tk::MbMotion .v_menu.set up 309 89
+     tk::MbMotion .v_menu.set up 308 89
+     tk::MbMotion .v_menu.set up 307 89
+     tk::MbMotion .v_menu.set up 306 89
+     tk::MbMotion .v_menu.set up 306 88
+     tk::MbMotion .v_menu.set up 305 88
+     tk::MbMotion .v_menu.set up 304 88
+     tk::MbMotion .v_menu.set up 303 88
+     tk::MbMotion .v_menu.set up 302 88
+     tk::MbMotion .v_menu.set up 301 88
+     tk::MbMotion .v_menu.set up 300 88
+     tk::MbMotion .v_menu.set up 299 88
+     tk::MbMotion .v_menu.set up 298 89
+     tk::MbMotion .v_menu.set up 297 89
+     tk::MbMotion .v_menu.set up 296 89
+     tk::MbMotion .v_menu.set up 295 89
+     tk::MbMotion .v_menu.set up 294 89
+     tk::MbMotion .v_menu.set up 293 89
+     tk::MbLeave .v_menu.set
+     tk::MbEnter .v_menu.read
+     tk::MbMotion .v_menu.read up 292 89
+     if {$tk::Priv(inMenubutton) ne ""} {
+	tk::MbPost $tk::Priv(inMenubutton) 292 89
+    }
+     tk::MbButtonUp .v_menu.read
+     tk::MbMotion .v_menu.read up 292 90
+     tk::MbMotion .v_menu.read up 292 91
+     tk::MbMotion .v_menu.read up 292 93
+     tk::MbLeave .v_menu.read
+     set tk::Priv(window) .v_menu.read.menu
+    if {[.v_menu.read.menu cget -type] eq "tearoff"} {
+	if {"NotifyNormal" ne "NotifyUngrab"} {
+	    if {[tk windowingsystem] eq "x11"} {
+		tk_menuSetFocus .v_menu.read.menu
+	    }
+	}
+    }
+    tk::MenuMotion .v_menu.read.menu 36 0 16
+     tk::MbMotion .v_menu.read up 295 94
+     tk::MbMotion .v_menu.read up 295 92
+     tk::MbMotion .v_menu.read up 294 90
+     tk::MbMotion .v_menu.read up 294 89
+     tk::MbMotion .v_menu.read up 293 88
+     tk::MbMotion .v_menu.read up 293 87
+     tk::MbMotion .v_menu.read up 293 86
+     tk::MbEnter .v_menu.read
+     tk::MbMotion .v_menu.read up 292 86
+     tk::MbMotion .v_menu.read up 292 87
+     tk::MbMotion .v_menu.read up 291 88
+     tk::MbMotion .v_menu.read up 290 89
+     tk::MbMotion .v_menu.read up 290 90
+     tk::MbMotion .v_menu.read up 290 91
+     tk::MbMotion .v_menu.read up 289 93
+     tk::MbMotion .v_menu.read up 289 94
+     tk::MbLeave .v_menu.read
+     set tk::Priv(window) .v_menu.read.menu
+    if {[.v_menu.read.menu cget -type] eq "tearoff"} {
+	if {"NotifyNormal" ne "NotifyUngrab"} {
+	    if {[tk windowingsystem] eq "x11"} {
+		tk_menuSetFocus .v_menu.read.menu
+	    }
+	}
+    }
+    tk::MenuMotion .v_menu.read.menu 33 0 16
+#Gui Step(2)===>(Menu).v_menu.read.menu <Button> {(menu-item) "Do Dofile"}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 2:  (Menu) <Button>\
+ (menu-item) "Do Dofile"} .v_menu.read.menu } 
+set x [guiGetMenuX .v_menu.read.menu 4];set y [guiGetMenuY .v_menu.read.menu 4 ] 
+     tk::MenuMotion .v_menu.read.menu $x $y 0
+     tk::MenuButtonDown .v_menu.read.menu
+    tk::MenuInvoke .v_menu.read.menu 1
+callback Gui_hlist_leave .a.pane.f1.middle.golden.fm.tree.f1.hlist
+_tixRecordFlags <1> % 10324 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 16 16121527 ?? 91 64 ?? ?? 0 ?? ?? 0x000395 00000000 4 .fselect.fsbox.lf.pane.2.filelist.listbox 693 347; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+set x [guiGetListBoxEntryX .fselect.fsbox.lf.pane.2.filelist.listbox 3];set y [guiGetListBoxEntryY .fselect.fsbox.lf.pane.2.filelist.listbox 3] 
+     if {[winfo exists .fselect.fsbox.lf.pane.2.filelist.listbox]} {
+	tk::ListboxBeginSelect .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index  @$x,$y] 1
+    }
+#Gui Step(5)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <Button-1> RISCV_CRYPTO.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 5:  (Listbox) <Button-1>\
+ RISCV_CRYPTO.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <1> % 10324 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 16 16121527 ?? 91 64 ?? ?? 0 ?? ?? 0x000395 00000000 4 .fselect.fsbox.lf.pane.2.filelist.listbox 693 347; 
+	if {[string is true -strict [.fselect.fsbox.lf.pane.2.filelist.listbox cget -takefocus]]} {
+	    focus .fselect.fsbox.lf.pane.2.filelist.listbox
+	}
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+focus .fselect.fsbox.lf.pane.2.filelist.listbox
+#Gui Step(6)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> RISCV_CRYPTO.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 6:  (Listbox) <ButtonRelease-1>\
+ RISCV_CRYPTO.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <ButtonRelease-1> % 10396 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 272 16121763 ?? 91 64 ?? ?? 0 ?? ?? 0x000395 00000000 5 .fselect.fsbox.lf.pane.2.filelist.listbox 693 347; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+#Gui Step(7)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> RISCV_CRYPTO.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 7:  (Listbox) <ButtonRelease-1>\
+ RISCV_CRYPTO.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+     tk::CancelRepeat
+    .fselect.fsbox.lf.pane.2.filelist.listbox activate @91,64
+#Gui Step(8)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> RISCV_CRYPTO.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 8:  (Listbox) <ButtonRelease-1>\
+ RISCV_CRYPTO.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <ButtonRelease-1> % 10396 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 272 16121763 ?? 91 64 ?? ?? 0 ?? ?? 0x000395 00000000 5 .fselect.fsbox.lf.pane.2.filelist.listbox 693 347; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+     tk::ButtonEnter .fselect.fsbox.bf.cancel
+     tk::ButtonLeave .fselect.fsbox.bf.cancel
+     tk::ButtonEnter .fselect.fsbox.bf.ok
+     tk::ButtonDown .fselect.fsbox.bf.ok
+     tk::ButtonUp .fselect.fsbox.bf.ok
+     tk::ButtonLeave .fselect.fsbox.bf.ok
+ guiWinConfig .fselect 563 264 402 189 
+ guiWinConfig .b.frame.lab 204 22 1 1 
+ guiWinConfig .b.frame.lab 235 22 1 1 
+ guiWinConfig .a.pane.f3.command.text.text.promt2 67 19 1 -13 
+callback Gui_hlist_leave .a.pane.f1.middle.revised.fm.tree.f1.hlist
+#Gui Step(11)===>(Text).a.pane.f2.mesg.text.text <Button-1> 15.111
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 11:  (Text) <Button-1>\
+ 15.111} .a.pane.f2.mesg.text.text } 
+set x [guiGetTextX .a.pane.f2.mesg.text.text 15 111];set y [guiGetTextY .a.pane.f2.mesg.text.text 15 111] 
+     .a.pane.f2.mesg.text.text configure -state normal
+    tkTextButton1 .a.pane.f2.mesg.text.text $x $y
+#Gui Step(12)===>(Text).a.pane.f2.mesg.text.text <Button-1> 15.111
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 12:  (Text) <Button-1>\
+ 15.111} .a.pane.f2.mesg.text.text } 
+set x [guiGetTextX .a.pane.f2.mesg.text.text 15 111];set y [guiGetTextY .a.pane.f2.mesg.text.text 15 111] 
+     tk::TextButton1 .a.pane.f2.mesg.text.text $x $y
+    .a.pane.f2.mesg.text.text tag remove sel 0.0 end
+     set tk::Priv(x) 286
+    set tk::Priv(y) 136
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 286 136
+     set tk::Priv(x) 284
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 284 137
+     set tk::Priv(x) 280
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 280 137
+     set tk::Priv(x) 277
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 277 137
+     set tk::Priv(x) 275
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 275 137
+     set tk::Priv(x) 270
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 270 137
+     set tk::Priv(x) 269
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 269 137
+     set tk::Priv(x) 264
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 264 137
+     set tk::Priv(x) 262
+    set tk::Priv(y) 138
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 262 138
+     set tk::Priv(x) 257
+    set tk::Priv(y) 139
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 257 139
+     set tk::Priv(x) 255
+    set tk::Priv(y) 139
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 255 139
+     set tk::Priv(x) 251
+    set tk::Priv(y) 140
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 251 140
+     set tk::Priv(x) 249
+    set tk::Priv(y) 140
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 249 140
+     set tk::Priv(x) 245
+    set tk::Priv(y) 140
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 245 140
+     set tk::Priv(x) 244
+    set tk::Priv(y) 140
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 244 140
+     set tk::Priv(x) 240
+    set tk::Priv(y) 140
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 240 140
+     set tk::Priv(x) 239
+    set tk::Priv(y) 140
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 239 140
+     set tk::Priv(x) 236
+    set tk::Priv(y) 140
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 236 140
+     set tk::Priv(x) 233
+    set tk::Priv(y) 138
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 233 138
+     set tk::Priv(x) 232
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 232 137
+     set tk::Priv(x) 229
+    set tk::Priv(y) 137
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 229 137
+     set tk::Priv(x) 226
+    set tk::Priv(y) 136
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 226 136
+     set tk::Priv(x) 225
+    set tk::Priv(y) 135
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 225 135
+     set tk::Priv(x) 224
+    set tk::Priv(y) 135
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 224 135
+     set tk::Priv(x) 223
+    set tk::Priv(y) 134
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 223 134
+     set tk::Priv(x) 221
+    set tk::Priv(y) 134
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 221 134
+     set tk::Priv(x) 220
+    set tk::Priv(y) 133
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 220 133
+     set tk::Priv(x) 218
+    set tk::Priv(y) 132
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 218 132
+     set tk::Priv(x) 215
+    set tk::Priv(y) 132
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 215 132
+     set tk::Priv(x) 215
+    set tk::Priv(y) 131
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 215 131
+     set tk::Priv(x) 214
+    set tk::Priv(y) 130
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 214 130
+     set tk::Priv(x) 213
+    set tk::Priv(y) 130
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 213 130
+     set tk::Priv(x) 211
+    set tk::Priv(y) 129
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 211 129
+     set tk::Priv(x) 208
+    set tk::Priv(y) 128
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 208 128
+     set tk::Priv(x) 206
+    set tk::Priv(y) 127
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 206 127
+     set tk::Priv(x) 203
+    set tk::Priv(y) 126
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 203 126
+     set tk::Priv(x) 202
+    set tk::Priv(y) 126
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 202 126
+     set tk::Priv(x) 200
+    set tk::Priv(y) 125
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 200 125
+     set tk::Priv(x) 198
+    set tk::Priv(y) 124
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 198 124
+     set tk::Priv(x) 195
+    set tk::Priv(y) 124
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 195 124
+     set tk::Priv(x) 195
+    set tk::Priv(y) 123
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 195 123
+     set tk::Priv(x) 192
+    set tk::Priv(y) 121
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 192 121
+     set tk::Priv(x) 191
+    set tk::Priv(y) 121
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 191 121
+     set tk::Priv(x) 189
+    set tk::Priv(y) 120
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 189 120
+     set tk::Priv(x) 187
+    set tk::Priv(y) 120
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 187 120
+     set tk::Priv(x) 185
+    set tk::Priv(y) 118
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 185 118
+     set tk::Priv(x) 182
+    set tk::Priv(y) 117
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 182 117
+     set tk::Priv(x) 181
+    set tk::Priv(y) 117
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 181 117
+     set tk::Priv(x) 180
+    set tk::Priv(y) 116
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 180 116
+     set tk::Priv(x) 179
+    set tk::Priv(y) 115
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 179 115
+     set tk::Priv(x) 177
+    set tk::Priv(y) 115
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 177 115
+     set tk::Priv(x) 176
+    set tk::Priv(y) 115
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 176 115
+     set tk::Priv(x) 174
+    set tk::Priv(y) 113
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 174 113
+     set tk::Priv(x) 173
+    set tk::Priv(y) 113
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 173 113
+     set tk::Priv(x) 171
+    set tk::Priv(y) 112
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 171 112
+     set tk::Priv(x) 170
+    set tk::Priv(y) 112
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 170 112
+     set tk::Priv(x) 168
+    set tk::Priv(y) 110
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 168 110
+     set tk::Priv(x) 167
+    set tk::Priv(y) 110
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 167 110
+     set tk::Priv(x) 165
+    set tk::Priv(y) 110
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 165 110
+     set tk::Priv(x) 163
+    set tk::Priv(y) 110
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 163 110
+     set tk::Priv(x) 161
+    set tk::Priv(y) 109
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 161 109
+     set tk::Priv(x) 160
+    set tk::Priv(y) 108
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 160 108
+     set tk::Priv(x) 159
+    set tk::Priv(y) 107
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 159 107
+     set tk::Priv(x) 156
+    set tk::Priv(y) 107
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 156 107
+     set tk::Priv(x) 154
+    set tk::Priv(y) 106
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 154 106
+     set tk::Priv(x) 153
+    set tk::Priv(y) 106
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 153 106
+     set tk::Priv(x) 150
+    set tk::Priv(y) 104
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 150 104
+     set tk::Priv(x) 146
+    set tk::Priv(y) 103
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 146 103
+     set tk::Priv(x) 144
+    set tk::Priv(y) 103
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 144 103
+     set tk::Priv(x) 143
+    set tk::Priv(y) 103
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 143 103
+     set tk::Priv(x) 142
+    set tk::Priv(y) 103
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 142 103
+     set tk::Priv(x) 141
+    set tk::Priv(y) 102
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 141 102
+     set tk::Priv(x) 139
+    set tk::Priv(y) 101
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 139 101
+     set tk::Priv(x) 137
+    set tk::Priv(y) 101
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 137 101
+     set tk::Priv(x) 136
+    set tk::Priv(y) 100
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 136 100
+     set tk::Priv(x) 135
+    set tk::Priv(y) 100
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 135 100
+     set tk::Priv(x) 132
+    set tk::Priv(y) 99
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 132 99
+     set tk::Priv(x) 132
+    set tk::Priv(y) 97
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 132 97
+     set tk::Priv(x) 130
+    set tk::Priv(y) 97
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 130 97
+     set tk::Priv(x) 129
+    set tk::Priv(y) 97
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 129 97
+     set tk::Priv(x) 127
+    set tk::Priv(y) 96
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 127 96
+     set tk::Priv(x) 125
+    set tk::Priv(y) 95
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 125 95
+     set tk::Priv(x) 123
+    set tk::Priv(y) 94
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 123 94
+     set tk::Priv(x) 123
+    set tk::Priv(y) 93
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 123 93
+     set tk::Priv(x) 122
+    set tk::Priv(y) 93
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 122 93
+     set tk::Priv(x) 121
+    set tk::Priv(y) 93
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 121 93
+     set tk::Priv(x) 120
+    set tk::Priv(y) 93
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 120 93
+     set tk::Priv(x) 119
+    set tk::Priv(y) 91
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 119 91
+     set tk::Priv(x) 118
+    set tk::Priv(y) 91
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 118 91
+     set tk::Priv(x) 117
+    set tk::Priv(y) 91
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 117 91
+     set tk::Priv(x) 116
+    set tk::Priv(y) 90
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 116 90
+     set tk::Priv(x) 115
+    set tk::Priv(y) 90
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 115 90
+     set tk::Priv(x) 115
+    set tk::Priv(y) 89
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 115 89
+     set tk::Priv(x) 114
+    set tk::Priv(y) 89
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 114 89
+     set tk::Priv(x) 112
+    set tk::Priv(y) 89
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 112 89
+     set tk::Priv(x) 112
+    set tk::Priv(y) 88
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 112 88
+     set tk::Priv(x) 111
+    set tk::Priv(y) 88
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 111 88
+     set tk::Priv(x) 111
+    set tk::Priv(y) 87
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 111 87
+     set tk::Priv(x) 110
+    set tk::Priv(y) 87
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 110 87
+     set tk::Priv(x) 109
+    set tk::Priv(y) 87
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 109 87
+     set tk::Priv(x) 108
+    set tk::Priv(y) 86
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 108 86
+     set tk::Priv(x) 108
+    set tk::Priv(y) 85
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 108 85
+     set tk::Priv(x) 107
+    set tk::Priv(y) 85
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 107 85
+     set tk::Priv(x) 105
+    set tk::Priv(y) 84
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 105 84
+     set tk::Priv(x) 103
+    set tk::Priv(y) 83
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 103 83
+     set tk::Priv(x) 101
+    set tk::Priv(y) 82
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 101 82
+     set tk::Priv(x) 98
+    set tk::Priv(y) 82
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 98 82
+     set tk::Priv(x) 98
+    set tk::Priv(y) 81
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 98 81
+     set tk::Priv(x) 96
+    set tk::Priv(y) 81
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 96 81
+     set tk::Priv(x) 95
+    set tk::Priv(y) 81
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 95 81
+     set tk::Priv(x) 93
+    set tk::Priv(y) 79
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 93 79
+     set tk::Priv(x) 91
+    set tk::Priv(y) 79
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 91 79
+     set tk::Priv(x) 89
+    set tk::Priv(y) 78
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 89 78
+     set tk::Priv(x) 88
+    set tk::Priv(y) 78
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 88 78
+     set tk::Priv(x) 85
+    set tk::Priv(y) 77
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 85 77
+     set tk::Priv(x) 84
+    set tk::Priv(y) 77
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 84 77
+     set tk::Priv(x) 83
+    set tk::Priv(y) 76
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 83 76
+     set tk::Priv(x) 80
+    set tk::Priv(y) 75
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 80 75
+     set tk::Priv(x) 78
+    set tk::Priv(y) 75
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 78 75
+     set tk::Priv(x) 77
+    set tk::Priv(y) 75
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 77 75
+     set tk::Priv(x) 76
+    set tk::Priv(y) 75
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 76 75
+     set tk::Priv(x) 74
+    set tk::Priv(y) 75
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 74 75
+     set tk::Priv(x) 72
+    set tk::Priv(y) 74
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 72 74
+     set tk::Priv(x) 70
+    set tk::Priv(y) 72
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 70 72
+     set tk::Priv(x) 68
+    set tk::Priv(y) 72
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 68 72
+     set tk::Priv(x) 67
+    set tk::Priv(y) 72
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 67 72
+     set tk::Priv(x) 66
+    set tk::Priv(y) 72
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 66 72
+     set tk::Priv(x) 64
+    set tk::Priv(y) 71
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 64 71
+     set tk::Priv(x) 63
+    set tk::Priv(y) 71
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 63 71
+     set tk::Priv(x) 62
+    set tk::Priv(y) 70
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 62 70
+     set tk::Priv(x) 61
+    set tk::Priv(y) 70
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 61 70
+     set tk::Priv(x) 60
+    set tk::Priv(y) 70
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 60 70
+     set tk::Priv(x) 60
+    set tk::Priv(y) 69
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 60 69
+     set tk::Priv(x) 59
+    set tk::Priv(y) 69
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 59 69
+     set tk::Priv(x) 58
+    set tk::Priv(y) 69
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 58 69
+     set tk::Priv(x) 57
+    set tk::Priv(y) 68
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 57 68
+     set tk::Priv(x) 57
+    set tk::Priv(y) 67
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 57 67
+     set tk::Priv(x) 56
+    set tk::Priv(y) 67
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 56 67
+     set tk::Priv(x) 56
+    set tk::Priv(y) 66
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 56 66
+     set tk::Priv(x) 55
+    set tk::Priv(y) 66
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 55 66
+     set tk::Priv(x) 55
+    set tk::Priv(y) 65
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 55 65
+     set tk::Priv(x) 54
+    set tk::Priv(y) 65
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 54 65
+     set tk::Priv(x) 54
+    set tk::Priv(y) 64
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 54 64
+     set tk::Priv(x) 53
+    set tk::Priv(y) 64
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 53 64
+     set tk::Priv(x) 53
+    set tk::Priv(y) 63
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 53 63
+     set tk::Priv(x) 53
+    set tk::Priv(y) 62
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 53 62
+     set tk::Priv(x) 52
+    set tk::Priv(y) 61
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 52 61
+     set tk::Priv(x) 50
+    set tk::Priv(y) 60
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 50 60
+     set tk::Priv(x) 50
+    set tk::Priv(y) 59
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 50 59
+     set tk::Priv(x) 50
+    set tk::Priv(y) 58
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 50 58
+     set tk::Priv(x) 49
+    set tk::Priv(y) 58
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 49 58
+     set tk::Priv(x) 48
+    set tk::Priv(y) 57
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 48 57
+     set tk::Priv(x) 47
+    set tk::Priv(y) 55
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 47 55
+     set tk::Priv(x) 47
+    set tk::Priv(y) 54
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 47 54
+     set tk::Priv(x) 46
+    set tk::Priv(y) 53
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 46 53
+     set tk::Priv(x) 46
+    set tk::Priv(y) 52
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 46 52
+     set tk::Priv(x) 45
+    set tk::Priv(y) 52
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 45 52
+     set tk::Priv(x) 44
+    set tk::Priv(y) 51
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 44 51
+     set tk::Priv(x) 43
+    set tk::Priv(y) 51
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 43 51
+     set tk::Priv(x) 43
+    set tk::Priv(y) 49
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 43 49
+     set tk::Priv(x) 42
+    set tk::Priv(y) 49
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 42 49
+     set tk::Priv(x) 41
+    set tk::Priv(y) 49
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 41 49
+     set tk::Priv(x) 41
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 41 48
+     set tk::Priv(x) 40
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 40 48
+     set tk::Priv(x) 39
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 39 48
+     set tk::Priv(x) 38
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 38 48
+     set tk::Priv(x) 37
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 37 48
+     set tk::Priv(x) 36
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 36 48
+     set tk::Priv(x) 35
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 35 48
+     set tk::Priv(x) 33
+    set tk::Priv(y) 48
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 33 48
+     set tk::Priv(x) 33
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 33 47
+     set tk::Priv(x) 32
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 32 47
+     set tk::Priv(x) 31
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 31 47
+     set tk::Priv(x) 30
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 30 47
+     set tk::Priv(x) 29
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 29 47
+     set tk::Priv(x) 28
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 28 47
+     set tk::Priv(x) 27
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 27 47
+     set tk::Priv(x) 26
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 26 47
+     set tk::Priv(x) 24
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 24 47
+     set tk::Priv(x) 23
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 23 47
+     set tk::Priv(x) 22
+    set tk::Priv(y) 47
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 22 47
+     set tk::Priv(x) 21
+    set tk::Priv(y) 46
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 21 46
+     set tk::Priv(x) 20
+    set tk::Priv(y) 46
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 20 46
+     set tk::Priv(x) 19
+    set tk::Priv(y) 46
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 19 46
+     set tk::Priv(x) 19
+    set tk::Priv(y) 45
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 19 45
+     set tk::Priv(x) 18
+    set tk::Priv(y) 45
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 18 45
+     set tk::Priv(x) 16
+    set tk::Priv(y) 44
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 16 44
+     set tk::Priv(x) 15
+    set tk::Priv(y) 43
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 15 43
+     set tk::Priv(x) 15
+    set tk::Priv(y) 41
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 15 41
+     set tk::Priv(x) 15
+    set tk::Priv(y) 39
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 15 39
+     set tk::Priv(x) 14
+    set tk::Priv(y) 36
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 14 36
+     set tk::Priv(x) 14
+    set tk::Priv(y) 34
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 14 34
+     set tk::Priv(x) 13
+    set tk::Priv(y) 33
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 13 33
+     set tk::Priv(x) 13
+    set tk::Priv(y) 31
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 13 31
+     set tk::Priv(x) 12
+    set tk::Priv(y) 31
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 12 31
+     set tk::Priv(x) 12
+    set tk::Priv(y) 30
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 12 30
+     set tk::Priv(x) 12
+    set tk::Priv(y) 29
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 12 29
+     set tk::Priv(x) 12
+    set tk::Priv(y) 28
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 12 28
+     set tk::Priv(x) 12
+    set tk::Priv(y) 27
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 12 27
+     set tk::Priv(x) 12
+    set tk::Priv(y) 26
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 12 26
+     set tk::Priv(x) 10
+    set tk::Priv(y) 27
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 10 27
+     set tk::Priv(x) 9
+    set tk::Priv(y) 27
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 9 27
+     set tk::Priv(x) 9
+    set tk::Priv(y) 28
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 9 28
+     set tk::Priv(x) 9
+    set tk::Priv(y) 29
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 9 29
+     set tk::Priv(x) 8
+    set tk::Priv(y) 30
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 8 30
+     set tk::Priv(x) 8
+    set tk::Priv(y) 31
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 8 31
+     set tk::Priv(x) 8
+    set tk::Priv(y) 32
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 8 32
+     set tk::Priv(x) 7
+    set tk::Priv(y) 33
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 7 33
+     set tk::Priv(x) 7
+    set tk::Priv(y) 34
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 7 34
+     set tk::Priv(x) 6
+    set tk::Priv(y) 35
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 6 35
+     set tk::Priv(x) 5
+    set tk::Priv(y) 35
+    tk::TextSelectTo .a.pane.f2.mesg.text.text 5 35
+     tkCancelRepeat
+    set pos [.a.pane.f2.mesg.text.text index insert]
+    #set pos {end - 1 chars}
+    .a.pane.f2.mesg.text.text mark set insert $pos
+    .a.pane.f2.mesg.text.text see insert
+    .a.pane.f2.mesg.text.text configure -state disabled
+     tk::CancelRepeat
+callback Gui_hlist_leave .a.pane.f1.middle.golden.fm.tree.f1.hlist
+         if { [ .icon.rdsn cget -state ] == "normal" } {
+            .icon.rdsn configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.rdsn
+ .icon.rdsn configure -relief flat 
+     tk::ButtonLeave .icon.rdsn
+     tk::MbEnter .v_menu.set
+     tk::MbMotion .v_menu.set up 295 93
+     tk::MbMotion .v_menu.set up 293 92
+     tk::MbLeave .v_menu.set
+     tk::MbEnter .v_menu.read
+     tk::MbMotion .v_menu.read up 289 85
+     tk::MbMotion .v_menu.read up 288 82
+     tk::MbMotion .v_menu.read up 286 80
+     tk::MbMotion .v_menu.read up 284 75
+     tk::MbMotion .v_menu.read up 283 75
+     tk::MbMotion .v_menu.read up 282 72
+     tk::MbMotion .v_menu.read up 281 70
+     tk::MbMotion .v_menu.read up 278 68
+     tk::MbLeave .v_menu.read
+     tk::MbEnter .v_menu.read
+     tk::MbMotion .v_menu.read up 264 68
+     tk::MbMotion .v_menu.read up 264 69
+     tk::MbMotion .v_menu.read up 263 70
+     tk::MbMotion .v_menu.read up 263 71
+     tk::MbMotion .v_menu.read up 263 72
+     tk::MbMotion .v_menu.read up 264 72
+     tk::MbMotion .v_menu.read up 264 73
+     tk::MbMotion .v_menu.read up 265 73
+     tk::MbMotion .v_menu.read up 266 74
+     tk::MbMotion .v_menu.read up 267 75
+     tk::MbMotion .v_menu.read up 268 75
+     tk::MbMotion .v_menu.read up 268 76
+     tk::MbMotion .v_menu.read up 268 77
+     tk::MbMotion .v_menu.read up 269 77
+     tk::MbMotion .v_menu.read up 269 78
+     tk::MbMotion .v_menu.read up 270 78
+     tk::MbMotion .v_menu.read up 270 79
+     if {$tk::Priv(inMenubutton) ne ""} {
+	tk::MbPost $tk::Priv(inMenubutton) 270 79
+    }
+     tk::MbButtonUp .v_menu.read
+     tk::MbMotion .v_menu.read up 271 80
+     tk::MbMotion .v_menu.read up 275 86
+     tk::MbMotion .v_menu.read up 276 89
+     tk::MbLeave .v_menu.read
+     set tk::Priv(window) .v_menu.read.menu
+    if {[.v_menu.read.menu cget -type] eq "tearoff"} {
+	if {"NotifyNormal" ne "NotifyUngrab"} {
+	    if {[tk windowingsystem] eq "x11"} {
+		tk_menuSetFocus .v_menu.read.menu
+	    }
+	}
+    }
+    tk::MenuMotion .v_menu.read.menu 26 2 16
+#Gui Step(17)===>(Menu).v_menu.read.menu <Button> {(menu-item) "Read Library"}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 17:  (Menu) <Button>\
+ (menu-item) "Read Library"} .v_menu.read.menu } 
+set x [guiGetMenuX .v_menu.read.menu 0];set y [guiGetMenuY .v_menu.read.menu 0 ] 
+     tk::MenuMotion .v_menu.read.menu $x $y 0
+     tk::MenuButtonDown .v_menu.read.menu
+    tk::MenuInvoke .v_menu.read.menu 1
+_tixRecordFlags <Configure> % 29970 00000000 ?? ?? ?? ?? 46 ?? ?? 0 ?? ?? ?? 493 4 216 ?? 0 0 ?? ?? ?? ?? 22 .rlibrary.bkd0.border.frame.fsbox.lf.types ?? ??; 
+	tixWidgetDoWhenIdle tixComboBox:align .rlibrary.bkd0.border.frame.fsbox.lf.types
+    ; _tixDeleteFlags;
+_tixRecordFlags <Configure> % 30270 00000000 ?? ?? ?? ?? 46 ?? ?? 0 ?? ?? ?? 181 5 3 ?? 0 0 ?? ?? ?? ?? 22 .rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dir ?? ??; 
+	tixWidgetDoWhenIdle tixComboBox:align .rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dir
+    ; _tixDeleteFlags;
+_tixRecordFlags <Configure> % 30287 00000000 ?? ?? ?? ?? 46 ?? ?? 0 ?? ?? ?? 292 5 3 ?? 0 0 ?? ?? ?? ?? 22 .rlibrary.bkd0.border.frame.fsbox.lf.pane.2.file ?? ??; 
+	tixWidgetDoWhenIdle tixComboBox:align .rlibrary.bkd0.border.frame.fsbox.lf.pane.2.file
+    ; _tixDeleteFlags;
+         if { [ .icon.rdsn cget -state ] == "normal" } {
+            .icon.rdsn configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.rdsn
+ .icon.rdsn configure -relief flat 
+     tk::ButtonLeave .icon.rdsn
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb cget -activebackground]
+	.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb configure -activebackground [.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb cget -background]
+    }
+    .rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb activate [.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb identify 12 36]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb activate {}
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb cget -activebackground]
+	.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb configure -activebackground [.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb cget -background]
+    }
+    .rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb activate [.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb identify 7 77]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .rlibrary.bkd0.border.frame.fsbox.lf.pane.1.dirlist.vsb activate {}
+     tk::ButtonEnter .rlibrary.bkd0.border.frame.fsbox.lf.pane.2.file.frame.arrow
+     tk::ButtonLeave .rlibrary.bkd0.border.frame.fsbox.lf.pane.2.file.frame.arrow
+     tk::ButtonEnter .rlibrary.bkd0.border.frame.fsbox.bf.ok
+     tk::ButtonLeave .rlibrary.bkd0.border.frame.fsbox.bf.ok
+     tk::ButtonEnter .rlibrary.bt.help
+     tk::ButtonLeave .rlibrary.bt.help
+         if { [ .v_menu.logo cget -state ] == "normal" } {
+            .v_menu.logo configure -relief groove
+        }
+    
+     tk::ButtonEnter .v_menu.logo
+ .v_menu.logo configure -relief flat 
+     tk::ButtonLeave .v_menu.logo
+     tk::ButtonEnter .icon.setup
+     tk::ButtonLeave .icon.setup
+callback Gui_hlist_leave .a.pane.f1.middle.revised.fm.tree.f1.hlist
+callback Gui_hlist_leave .a.pane.f1.middle.golden.fm.tree.f1.hlist

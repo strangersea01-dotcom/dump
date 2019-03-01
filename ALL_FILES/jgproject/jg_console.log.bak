@@ -1,0 +1,57 @@
+2023-02-15 01:57:16.131834 (34198) main____ INFO    ----------------------------------------
+2023-02-15 01:57:16.131990 (34198) main____ INFO    JasperGold version info
+2023-02-15 01:57:16.132009 (34198) main____ INFO      tool      : JasperGold 2019.12
+2023-02-15 01:57:16.132023 (34198) main____ INFO      version   : 2019.12p002 64 bits
+2023-02-15 01:57:16.132032 (34198) main____ INFO      build date: 2020.02.27 18:30:54 PST
+2023-02-15 01:57:16.132040 (34198) main____ INFO    ----------------------------------------
+2023-02-15 01:57:16.132046 (34198) main____ INFO    Runtime info:
+2023-02-15 01:57:16.132054 (34198) main____ INFO      platform  : Linux 3.10.0-1160.119.1.el7.x86_64 x86_64
+2023-02-15 01:57:16.132066 (34198) main____ INFO      hostname  : compute-srv5.atme.in
+2023-02-15 01:57:16.132073 (34198) main____ INFO      pid       : 34198
+2023-02-15 01:57:16.132081 (34198) main____ INFO      arguments : '-style' 'windows' '-superlint' 'riscv_lint_automation.tcl'
+2023-02-15 01:57:16.132094 (34198) main____ INFO      locale    : ISO-8859-1
+2023-02-15 01:57:16.132104 (34198) main____ INFO    ----------------------------------------
+2023-02-15 01:57:16.132111 (34198) main____ INFO    System resource limits info:
+2023-02-15 01:57:16.132119 (34198) main____ INFO      virtual memory: unlimited
+2023-02-15 01:57:16.132127 (34198) main____ INFO      cpu time      : unlimited
+2023-02-15 01:57:16.132145 (34198) main____ INFO      stack size    : 8388608 B
+2023-02-15 01:57:16.132156 (34198) main____ INFO      core file size: 0 B
+2023-02-15 01:57:16.132168 (34198) main____ INFO      open files    : 1024
+2023-02-15 01:57:16.132176 (34198) main____ INFO      file size     : unlimited
+2023-02-15 01:57:16.132183 (34198) main____ INFO    ----------------------------------------
+2023-02-15 01:57:16.132189 (34198) main____ INFO    Memory statistics:
+2023-02-15 01:57:16.132196 (34198) main____ INFO      total physical memory  : 792277968 kB
+2023-02-15 01:57:16.132202 (34198) main____ INFO      free physical memory   : 729554700 kB
+2023-02-15 01:57:16.132209 (34198) main____ INFO      committed address space: 168691520 kB
+2023-02-15 01:57:16.132215 (34198) main____ INFO    ----------------------------------------
+2023-02-15 01:57:16.132274 (34198) main____ INFO    Important environment variables:
+2023-02-15 01:57:16.132293 (34198) main____ INFO      CDS_LIC_FILE   : '5280@rbcadence'
+2023-02-15 01:57:16.132303 (34198) main____ INFO      DISPLAY        : ':34'
+2023-02-15 01:57:16.132312 (34198) main____ INFO      EDITOR         : 'gedit'
+2023-02-15 01:57:16.132321 (34198) main____ INFO      LANG           : 'en_US'
+2023-02-15 01:57:16.132330 (34198) main____ INFO      LM_LICENSE_FILE: '5280@rbcadence'
+2023-02-15 01:57:16.132336 (34198) main____ INFO    ----------------------------------------
+2023-02-15 01:57:16.132734 (34198) lic_core INFO    Initializing license system ...
+2023-02-15 01:57:16.136235 (34198) lic_core INFO    ... license system initialized.
+2023-02-15 01:57:16.138071 (34198) lic__man INFO    Claim 'main' for <ui>.
+2023-02-15 01:57:16.138141 (34198) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-02-15 01:57:16.154635 (34198) lic_core INFO    ... (1) checkout succeeded
+2023-02-15 01:57:16.154802 (34198) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-15 01:57:16.154853 (34198) lic_core INFO    (2) checking out 'jasper_afl' ...
+2023-02-15 01:57:16.170039 (34198) lic_core INFO    ... (2) checkout succeeded
+2023-02-15 01:57:16.170849 (34198) main____ INFO    Tool inactivity delay is 480000 ms.
+2023-02-15 01:57:16.918208 (34198) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-15 01:57:17.358578 (34198) lic__man INFO    Unclaim 'superlint' for <ui>.
+2023-02-15 01:57:17.358679 (34198) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-15 01:57:17.365362 (34198) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2023-02-15 01:57:17.368140 (34198) session_ INFO    Analysis session with session id 'session_0' started (pid: 34229)
+2023-02-15 01:57:18.484442 (34198) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:43282)
+2023-02-15 01:57:19.727170 (34198) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-15 01:57:21.388536 (34198) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-15 01:57:21.607579 (34198) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-02-15 02:05:34.636943 (34198) lic__man INFO    Entering idle state.
+2023-02-16 00:35:45.164219 (34220) main____ INFO    SIGINT received (#1). Trying to interrupt current computation(s).
+2023-02-16 00:35:45.782626 (34220) main____ INFO    SIGINT received (#1). Trying to interrupt current computation(s).
+2023-02-16 00:35:46.116359 (34220) main____ INFO    SIGINT received (#2). Trying to save and exit.
+2023-02-16 00:35:46.147160 (34198) main____ INFO    The database has been auto-saved to '/home/sgeuser118/Desktop/pipelining/RTL/jgproject/autosave_C34198.db'.
+2023-02-16 00:35:46.343150 (34220) main____ INFO    SIGINT received (#3). Forcing exit.

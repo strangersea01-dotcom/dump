@@ -1,0 +1,2 @@
+REAd IMplementation Information fv/riscv_scalar_cryptography_proscessor -golden fv_map -revised riscv_scalar_cryptography_proscessor_m_2v
+EXIt -f
