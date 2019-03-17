@@ -8,9 +8,9 @@ module data_memory(
 	//	integer i ;
                reg[7:0] mem[0:255];
 
-              /* initial begin
+               initial begin
                    $readmemh("../MEMORY/data_memory.hex",mem);
-               end*/
+               end
 
 			always@(posedge clk or posedge rst)
 		begin

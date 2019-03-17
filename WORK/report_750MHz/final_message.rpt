@@ -6,15 +6,13 @@
 Num   Sev       Id                       Message Text                    
 -------------------------------------------------------------------------
   6   Info  CDFG-250  Processing multi-dimensional arrays.               
-  1   Info  CDFG-362  Assuming that the full range of indexed or sliced  
-                      sensitivity signal is in the sensitivity list.     
   9   Info  CDFG-372  Bitwidth mismatch in assignment.                   
  65   Info  CDFG-771  Replaced logic with a constant value.              
   1   Info  CFM-1     Wrote dofile.                                      
   1   Info  CFM-5     Wrote formal verification information.             
- 67   Info  CWD-19    An implementation was inferred.                    
+ 64   Info  CWD-19    An implementation was inferred.                    
   3   Info  CWD-21    Skipping an invalid binding for a subprogram call. 
- 67   Info  CWD-36    Sorted the set of valid implementations for        
+ 64   Info  CWD-36    Sorted the set of valid implementations for        
                       synthetic operator.                                
   1   Info  DPOPT-1   Optimizing datapath logic.                         
   1   Info  DPOPT-2   Done optimizing datapath logic.                    
@@ -25,12 +23,7 @@ Num   Sev       Id                       Message Text
  44   Info  ELAB-2    Elaborating Subdesign.                             
   1   Info  ELAB-3    Done Elaborating Design.                           
   2   Info  GB-6      A datapath component has been ungrouped.           
-  2   Info  GLO-12    Replacing a flip-flop with a logic constant 0.     
-                      To prevent this optimization, set the              
-                      'optimize_constant_0_flops' root attribute to      
-                      'false' or 'optimize_constant_0_seq' instance      
-                      attribute to 'false'.                              
-  4   Info  GLO-32    Deleting sequential instances not driving any      
+  3   Info  GLO-32    Deleting sequential instances not driving any      
                       primary outputs.                                   
                       Optimizations such as constant propagation or      
                       redundancy removal could change the connections    
@@ -69,7 +62,7 @@ Num   Sev       Id                       Message Text
                       'optimize_merge_latches' root attributes to        
                       'false' or the 'optimize_merge_seq' instance       
                       attribute to 'false'.                              
- 43   Info  GLO-51    Hierarchical instance automatically ungrouped.     
+ 41   Info  GLO-51    Hierarchical instance automatically ungrouped.     
                       Hierarchical instances can be automatically        
                       ungrouped to allow for better area or timing       
                       optimization. You can control auto ungrouping      
@@ -112,21 +105,6 @@ Num   Sev       Id                       Message Text
                       the size of the log file.                          
   2   Info  PHYS-752  Partition Based Synthesis execution skipped.       
   4   Info  RTLOPT-30 Accepted resource sharing opportunity.             
-  1  Error  SDC-202   Could not interpret SDC command.                   
-                      The 'read_sdc' command encountered a problem       
-                      while trying to evaluate an SDC command. This SDC  
-                      command will be added to the Tcl variable          
-                      $::dc::sdc_failed_commands.                        
-  1  Error  SDC-204   Invalid SDC command option combination.            
-                      This option is not valid for the indicated SDC     
-                      command. Check the SDC command and contact         
-                      Cadence customer support if you believe this       
-                      option combination should be supported.            
-  1 Warning SDC-209   One or more commands failed when these             
-                      constraints were applied.                          
-                      You can examine the failed commands or save them   
-                      to a file by querying the Tcl variable             
-                      $::dc::sdc_failed_commands.                        
  43   Info  ST-110    Connection established with super-threading        
                       server.                                            
                       The tool is entering super-threading mode and has  
@@ -153,4 +131,23 @@ Num   Sev       Id                       Message Text
                       An external clock does not directly drive any      
                       points within the design, but is only used as a    
                       reference for external delays.                     
+  6 Warning VLOGPT-37 Ignoring unsynthesizable construct.                
+                      The following constructs will be ignored:
+    -    
+                      initial block
+    - final block
+    - program      
+                      block
+    - property block
+    - sequence block
+   
+                        - covergroup
+    - checker block
+    - gate      
+                      drive strength
+    - system task enable
+    - reg  
+                      declaration with initial value
+    - specify       
+                      block.                                             
 

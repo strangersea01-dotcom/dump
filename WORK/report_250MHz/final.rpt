@@ -1,14 +1,14 @@
 
 
-Working Directory = /home/vv2trainee2/Desktop/RISCV_SCALAR_CRYPTOGRPAHY_DATA_CONTROL/WORK
+Working Directory = /home/vv2trainee2/Desktop/RISCV_SCALAR_CRYPTOGRPAHY_DATA_CONTROL/RISCV_CRYPTO_PROJECT_1/RISCV_CRYPTO_PROJECT/WORK
 QoS Summary for riscv_scalar_cryptography_proscessor
 ================================================================================
 Metric                          generic         map             optimized      
 ================================================================================
-Slack (ps):                       273             195              80
-  R2R (ps):                     1,660           1,529           1,495
-  I2R (ps):                       273             195              80
-  R2O (ps):                     1,842           1,696           1,696
+Slack (ps):                     1,461           1,166           1,166
+  R2R (ps):                     1,609           1,454           1,436
+  I2R (ps):                     1,461           1,166           1,166
+  R2O (ps):                     1,842           1,686           1,686
   I2O (ps):                  no_value        no_value        no_value
   CG  (ps):                  no_value        no_value        no_value
 TNS (ps):                           0               0               0
@@ -18,10 +18,10 @@ TNS (ps):                           0               0               0
   I2O (ps):                  no_value        no_value        no_value
   CG  (ps):                  no_value        no_value        no_value
 Failing Paths:                      0               0               0
-Cell Area:                    298,285         187,504         180,539
-Total Cell Area:              298,285         187,504         180,539
-Leaf Instances:                67,534          43,731          37,722
-Total Instances:               67,534          43,731          37,722
+Cell Area:                    299,558         187,957         180,729
+Total Cell Area:              299,558         187,957         180,729
+Leaf Instances:                67,990          43,920          37,709
+Total Instances:               67,990          43,920          37,709
 Utilization (%):                 0.00            0.00            0.00
 Tot. Net Length (um):        no_value        no_value        no_value
 Avg. Net Length (um):        no_value        no_value        no_value
@@ -32,17 +32,17 @@ Norm Cong Hotspot Area:
   Max Cong:                  no_value        no_value        no_value
   Tot Cong:                  no_value        no_value        no_value
 ================================================================================
-CPU  Runtime (h:m:s):        00:02:59        00:03:23        00:01:45
-Real Runtime (h:m:s):        00:05:58        00:09:13        00:02:00
-CPU  Elapsed (h:m:s):        00:03:06        00:06:29        00:08:14
-Real Elapsed (h:m:s):        00:06:01        00:15:14        00:17:14
-Memory (MB):                  1007.16         1015.77         1011.77
+CPU  Runtime (h:m:s):        00:03:16        00:03:22        00:01:43
+Real Runtime (h:m:s):        00:06:45        00:09:22        00:02:00
+CPU  Elapsed (h:m:s):        00:03:23        00:06:45        00:08:28
+Real Elapsed (h:m:s):        00:06:47        00:16:09        00:18:09
+Memory (MB):                   963.04         1014.54         1011.54
 ================================================================================
 ================================================================================
 Flow Settings:
 ================================================================================
-Total Runtime (h:m:s): 00:17:22
-Total Memory (MB):     1011.77
+Total Runtime (h:m:s): 00:18:18
+Total Memory (MB):     1011.54
 Executable Version:    17.22-s017_1
 ================================================================================
 Total Cell Area =  Cell Area + Physical Cell Area

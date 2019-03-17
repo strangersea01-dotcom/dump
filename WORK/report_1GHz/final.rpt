@@ -1,27 +1,27 @@
 
 
-Working Directory = /home/vv2trainee2/Desktop/RISCV_SCALAR_CRYPTOGRPAHY_DATA_CONTROL/WORK
+Working Directory = /home/vv2trainee2/Desktop/RISCV_SCALAR_CRYPTOGRPAHY_DATA_CONTROL/RISCV_CRYPTO_PROJECT_1/RISCV_CRYPTO_PROJECT/WORK
 QoS Summary for riscv_scalar_cryptography_proscessor
 ================================================================================
 Metric                          generic         map             optimized      
 ================================================================================
-Slack (ps):                      -181             -37             -27
-  R2R (ps):                        49              53               3
-  I2R (ps):                      -181             -37             -27
-  R2O (ps):                       339             214             214
+Slack (ps):                      -137               1               0
+  R2R (ps):                      -137               1               0
+  I2R (ps):                       218              92              85
+  R2O (ps):                       342              77             109
   I2O (ps):                  no_value        no_value        no_value
   CG  (ps):                  no_value        no_value        no_value
-TNS (ps):                       5,112           1,032             811
-  R2R (ps):                         0               0               0
-  I2R (ps):                     5,112           1,032             811
+TNS (ps):                       2,744               0               0
+  R2R (ps):                     2,744               0               0
+  I2R (ps):                         0               0               0
   R2O (ps):                         0               0               0
   I2O (ps):                  no_value        no_value        no_value
   CG  (ps):                  no_value        no_value        no_value
-Failing Paths:                     32              32              32
-Cell Area:                    298,350         188,899         181,748
-Total Cell Area:              298,350         188,899         181,748
-Leaf Instances:                67,543          44,281          37,696
-Total Instances:               67,543          44,281          37,696
+Failing Paths:                     32               0               0
+Cell Area:                    300,491         187,342         181,285
+Total Cell Area:              300,491         187,342         181,285
+Leaf Instances:                68,340          42,475          37,428
+Total Instances:               68,340          42,475          37,428
 Utilization (%):                 0.00            0.00            0.00
 Tot. Net Length (um):        no_value        no_value        no_value
 Avg. Net Length (um):        no_value        no_value        no_value
@@ -32,17 +32,17 @@ Norm Cong Hotspot Area:
   Max Cong:                  no_value        no_value        no_value
   Tot Cong:                  no_value        no_value        no_value
 ================================================================================
-CPU  Runtime (h:m:s):        00:03:47        00:03:36        00:02:16
-Real Runtime (h:m:s):        00:07:20        00:09:46        00:02:35
-CPU  Elapsed (h:m:s):        00:03:54        00:07:30        00:09:46
-Real Elapsed (h:m:s):        00:07:22        00:17:08        00:19:43
-Memory (MB):                  1001.43         1085.66         1082.66
+CPU  Runtime (h:m:s):        00:03:48        00:03:24        00:01:43
+Real Runtime (h:m:s):        00:07:31        00:09:34        00:02:00
+CPU  Elapsed (h:m:s):        00:03:55        00:07:19        00:09:02
+Real Elapsed (h:m:s):        00:07:33        00:17:07        00:19:07
+Memory (MB):                   998.67         1082.45         1078.45
 ================================================================================
 ================================================================================
 Flow Settings:
 ================================================================================
-Total Runtime (h:m:s): 00:19:52
-Total Memory (MB):     1082.66
+Total Runtime (h:m:s): 00:19:17
+Total Memory (MB):     1078.45
 Executable Version:    17.22-s017_1
 ================================================================================
 Total Cell Area =  Cell Area + Physical Cell Area

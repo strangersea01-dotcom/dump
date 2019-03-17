@@ -1,4 +1,4 @@
-set_units -time 1333.33.0ps
+set_units -time 1333.33ps
 set_units -capacitance 1000.0fF
 
 current_design riscv_scalar_cryptography_proscessor 

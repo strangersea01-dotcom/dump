@@ -1,5 +1,5 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Feb 27, 2019 at 13:01:00 IST
+TOOL:	irun(64)	15.20-s051: Started on Mar 04, 2019 at 04:40:16 IST
 irun
 	-access +rwc
 	-f compile.f
@@ -74,9 +74,9 @@ irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-Recompiling... reason: file '../CORE/data_memory.v' is newer than expected.
-	expected: Wed Feb 27 12:48:18 2019
-	actual:   Wed Feb 27 13:00:37 2019
+Recompiling... reason: file '../CORE/aes32esmi.v' is newer than expected.
+	expected: Sat Mar  2 08:59:32 2019
+	actual:   Mon Mar  4 04:25:54 2019
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
 irun: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
@@ -89,21 +89,6 @@ ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied
 DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 |
 ncvlog: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-file: ../CORE/im_mem1.v
-	module worklib.im_mem1:v
-		errors: 0, warnings: 0
-file: ../CORE/im_mem2.v
-	module worklib.im_mem2:v
-		errors: 0, warnings: 0
-file: ../CORE/im_mem3.v
-	module worklib.im_mem3:v
-		errors: 0, warnings: 0
-file: ../CORE/register_file.v
-	module worklib.gpr:v
-		errors: 0, warnings: 0
-file: ../CORE/data_memory.v
-	module worklib.data_memory:v
-		errors: 0, warnings: 0
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
@@ -126,45 +111,23 @@ DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
 ncelab: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
-	riscv_scalar_cryptography_proscessor dut(.clk(clk),
-	                                       |
-ncelab: *W,CUVWSP (../VERIFICATION/RISC_TOP_TB.v,10|40): 1 output port was not connected:
-ncelab: (../CORE/riscv_scalar_cryptography_processor.v,5): write_out
-
 	Top level design units:
 		bit_rori
 		riscv_scalar_cryptography_tb
 	Building instance overlay tables: .................... Done
-	Generating native compiled code:
-DEFINE gpdk045		$ANALOG/45nm/gpdk045		
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,15): cds.lib Permission denied '/tools/cadence/FOUNDRY/analog/45nm/gpdk045' (cds.lib command ignored).
-DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
-|
-ncvlog_cg: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
-		worklib.data_memory:v <0x6e8861ca>
-			streams:   5, words:  1827
-		worklib.gpr:v <0x09b7549c>
-			streams:   6, words:  2119
-		worklib.im_mem1:v <0x28614926>
-			streams:   5, words:  2001
-		worklib.im_mem2:v <0x2ecdbd9a>
-			streams:   5, words:  2001
-		worklib.im_mem3:v <0x0ded3112>
-			streams:   5, words:  2001
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		               Instances  Unique
 		Modules:              54      47
-		Registers:            99      95
+		Registers:           100      96
 		Scalar wires:         18       -
-		Expanded wires:      128      10
-		Vectored wires:      148       -
+		Expanded wires:      160      11
+		Vectored wires:      142       -
 		Always blocks:        29      25
-		Initial blocks:       11       8
-		Cont. assignments:    79      75
-		Pseudo assignments:   21      21
+		Initial blocks:       12       9
+		Cont. assignments:    77      73
+		Pseudo assignments:   20      20
 	Writing initial simulation snapshot: worklib.bit_rori:v
 DEFINE gpdk045		$ANALOG/45nm/gpdk045		
 |
@@ -175,7 +138,7 @@ ncsim: *W,DLCPTH (/tools/cadence/FOUNDRY/cds.lib,19): cds.lib Invalid path '/hom
 Loading snapshot worklib.bit_rori:v .................... Done
 ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-Simulation complete via $finish(1) at time 310 NS + 0
-../VERIFICATION/RISC_TOP_TB.v:34 $finish();
+Simulation complete via $finish(1) at time 2020 NS + 0
+../VERIFICATION/RISC_TOP_TB.v:110 $finish();
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Feb 27, 2019 at 13:01:01 IST  (total: 00:00:01)
+TOOL:	irun(64)	15.20-s051: Exiting on Mar 04, 2019 at 04:40:16 IST  (total: 00:00:00)

@@ -3,7 +3,7 @@ module riscv_scalar_cryptography_proscessor (
 					input rst,
 					input [31:0] inst_write_en,
 					output [31:0] write_out
-				                      );
+                    				                      );
 
 					
 
@@ -18,7 +18,7 @@ wire[31:0] pc_inst_wire,rs2_data_w,rs1_data_w,mux_out_w,bit_mani_w,carry_less_w,
 wire[4:0] rd_addr_w_dc,rd_addr_w_ex;
 wire[4:0] alu_opcode_w,alu_opcode_w_dc,rd_addr_w_wb;
 wire reg_write_w,imm_sel_w,data_write_en_w,byte_sel_w,data_sel_mux_w,byte_sel_w_dc,reg_write_en_ex,data_sel_mux_ec_w,reg_enable_wb;
-wire [1:0] alu_sel_w,bytes_w,alu_sel_w_dc,bytes_w_dc;
+wire [1:0] alu_sel_w,bytes_w,alu_sel_w_dc;
 wire [31:0] rs1_data_w_dc,rs2_data_w_dc,alu_out_w_dc,rs2_data_w_ex,alu_out_w_wb,data_write_w_wb,sign_out_w,imm_sign_mux;
 wire reg_write_w_dc,imm_sel_w_dc,imm_extend_w;//,sign_sel_en_w;
 wire data_write_en_w_dc,data_write_en_w_ex,data_sel_mux_w_wb,data_sel_mux_w_dc;
@@ -56,9 +56,9 @@ fetch_cycle   fetch_cycle(.clk(clk),
                                   // .inst_out_c(inst_w_c));*/
 
 
-riscv_control_unit riscv_contro_unit(.inst_in(fetch_inst_out_w),
+riscv_control_unit riscv_contro_unit(.inst_in(fetch_inst_out_w[31:20]),
                                      .func3(fetch_inst_out_w[14:12]),
-                                     .func7(fetch_inst_out_w[31:25]),
+                                     //.func7(fetch_inst_out_w[31:25]),
                                      .opcode(fetch_inst_out_w[6:0]),
                                      .reg_write(reg_write_w_dc),
                                      .imm_sel(imm_sel_w_dc),
@@ -67,7 +67,7 @@ riscv_control_unit riscv_contro_unit(.inst_in(fetch_inst_out_w),
                                      .alu_opcode(alu_opcode_w_dc),
                                      .alu_sel_mux(alu_sel_w_dc),
                                      .byte_sel(byte_sel_w_dc),
-                                     .bytes(bytes_w_dc),
+                                    // .bytes(bytes_w_dc),
 				     .sign_extend(imm_extend_w) );
 
 
@@ -111,7 +111,7 @@ decode_cycle decoder_cycle(.clk(clk),
                            .alu_opcode_dc(alu_opcode_w_dc),
                            .alu_sel_mux_dc(alu_sel_w_dc),
                            .byte_sel_dc(byte_sel_w_dc),
-                           .bytes_dc(bytes_w_dc),
+                           .bytes_dc(fetch_inst_out_w[3:2]),
                            .imm_w(sign_out_w),
                            .rs1_data(rs1_data_w),
                            .rs2_data(rs2_data_w),
@@ -176,7 +176,7 @@ execute_cycle excutecycle(.clk(clk),
                           .data_sel_mux_in(data_sel_mux_w),
                           .data_sel_mux_ec(data_sel_mux_ec_w));
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-data_memory_top dm(.addr(alu_out_w_dc),
+data_memory_top dm(.addr(alu_out_w_dc[9:2]),
 		   .clk(clk),
 		   .rst(rst),
 		   .write_data(rs2_data_w_ex),
@@ -207,7 +207,7 @@ mux data_alu_sel(.rs1(alu_out_w_wb),
    //hzard unit 
 
 
-forward_unit forwardunit(.rst(rst), 
+forward_unit forwardunit(//.rst(rst), 
                          .regwritem(reg_write_en_ex), 
                          .regwritew(reg_enable_wb), 
                          .rd_m(rd_addr_w_ex), 
@@ -230,10 +230,10 @@ forward_unit forwardunit(.rst(rst),
               .d(forward_alu_rs2),
               .s(foward_b));
 
-
-
+                   
 
               assign write_out = data_to_reg_w;
+                             
 
       
 endmodule

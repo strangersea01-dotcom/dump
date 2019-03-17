@@ -29,9 +29,9 @@ reg[7:0] mem [0:255];
 
 	assign byte_1_out = mem[pc_addr];
 	
-	/*initial begin
+	initial begin
 		$readmemh("../MEMORY/byte_1.hex",mem);
-	end*/
+	end
 endmodule
 
 

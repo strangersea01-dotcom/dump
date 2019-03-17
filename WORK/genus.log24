@@ -1,0 +1,884 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.22-s017_1, built Sun Apr 01 2018
+Options: 
+Date:    Sat Mar 02 21:58:12 2019
+Host:    compute-srv2.eda.atme.in (x86_64 w/Linux 3.10.0-1160.49.1.el7.x86_64) (8cores*64cpus*4physical cpus*Intel(R) Xeon(R) CPU E5-4650 0 @ 2.70GHz 20480KB) (528140808KB)
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (12 seconds elapsed).
+
+WARNING: This version of the tool is 335 days old.
+@genus:root: 1> source ../TCL/top_1_2GHz.tcl
+Sourcing '../TCL/top_1_2GHz.tcl' (Sat Mar 02 21:58:47 IST 2019)...
+#@ Begin verbose source TCL/top_1_2GHz.tcl
+@file(top_1_2GHz.tcl) 1: set _REPORTS_PATH report_1_2GHz
+@file(top_1_2GHz.tcl) 2: set _OUTPUTS_PATH outputs_1_2GHz
+@file(top_1_2GHz.tcl) 3: set _LOG_PATH logs_1_2_GHz
+@file(top_1_2GHz.tcl) 4: set_db / .init_lib_search_path {../LIB}
+  Setting attribute of root '/': 'init_lib_search_path' = ../LIB
+@file(top_1_2GHz.tcl) 6: set_db / .init_hdl_search_path {../CORE}
+  Setting attribute of root '/': 'init_hdl_search_path' = ../CORE
+@file(top_1_2GHz.tcl) 8: set DESIGN riscv_scalar_cryptography_proscessor
+@file(top_1_2GHz.tcl) 10: read_libs { fast.lib slow.lib }
+
+Threads Configured:6
+
+  Message Summary for Library both libraries:
+  *******************************************
+  Could not find an attribute in the library. [LBR-436]: 1148
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  *******************************************
+ 
+Warning : Libraries have inconsistent nominal operating conditions. [LBR-38]
+        : The libraries are 'fast_vdd1v0' and 'slow_vdd1v0'.
+        : This is a common source of delay calculation confusion and is strongly discouraged.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ACHCONX2 and slow_vdd1v0/ACHCONX2).  Deleting (slow_vdd1v0/ACHCONX2).
+        : Library cell names must be unique.  Any duplicates will be deleted.  Only the first (as determined by the order of libraries) will be retained.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX1 and slow_vdd1v0/ADDFHX1).  Deleting (slow_vdd1v0/ADDFHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX2 and slow_vdd1v0/ADDFHX2).  Deleting (slow_vdd1v0/ADDFHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX4 and slow_vdd1v0/ADDFHX4).  Deleting (slow_vdd1v0/ADDFHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHXL and slow_vdd1v0/ADDFHXL).  Deleting (slow_vdd1v0/ADDFHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX1 and slow_vdd1v0/ADDFX1).  Deleting (slow_vdd1v0/ADDFX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX2 and slow_vdd1v0/ADDFX2).  Deleting (slow_vdd1v0/ADDFX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX4 and slow_vdd1v0/ADDFX4).  Deleting (slow_vdd1v0/ADDFX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFXL and slow_vdd1v0/ADDFXL).  Deleting (slow_vdd1v0/ADDFXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX1 and slow_vdd1v0/ADDHX1).  Deleting (slow_vdd1v0/ADDHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX2 and slow_vdd1v0/ADDHX2).  Deleting (slow_vdd1v0/ADDHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX4 and slow_vdd1v0/ADDHX4).  Deleting (slow_vdd1v0/ADDHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHXL and slow_vdd1v0/ADDHXL).  Deleting (slow_vdd1v0/ADDHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X1 and slow_vdd1v0/AND2X1).  Deleting (slow_vdd1v0/AND2X1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X2 and slow_vdd1v0/AND2X2).  Deleting (slow_vdd1v0/AND2X2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X4 and slow_vdd1v0/AND2X4).  Deleting (slow_vdd1v0/AND2X4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X6 and slow_vdd1v0/AND2X6).  Deleting (slow_vdd1v0/AND2X6).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X8 and slow_vdd1v0/AND2X8).  Deleting (slow_vdd1v0/AND2X8).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2XL and slow_vdd1v0/AND2XL).  Deleting (slow_vdd1v0/AND2XL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND3X1 and slow_vdd1v0/AND3X1).  Deleting (slow_vdd1v0/AND3X1).
+@file(top_1_2GHz.tcl) 12: read_hdl {riscv_scalar_cryptography_processor.v
+    pc.v
+    pc_top.v
+    pc_adder.v
+    im_mem0.v
+    im_mem1.v
+    im_mem2.v
+    im_mem3.v
+    im_mem_top.v
+    Fetch_cycle.v
+    riscv_control_unit.v
+    sign_extend.v
+    register_file.v
+    decoder_cycle.v
+    mux_21.v
+    bit_rol.v
+    bit_zip.v
+    bit_unzip.v
+    bit_ror.v
+    bit_rori.v
+    bit_orn.v
+    bit_xnor.v
+    bit_pack.v
+    bit_packh.v
+    bit_brev.v
+    bit_rev8.v
+    bit_andn.v
+    bitmanipulation.v
+    carry_less_multiplication.v
+    carry_less_engine.v
+    sbox_values.v
+    mix_op.v
+    aes32esi.v
+    aes32esmi.v
+    aes_engine.v
+    sha256_msg_datapath.v
+    sha256_round.v
+    sha_engine.v
+    crypto_engine.v
+    mux_31.v
+    execute_cycle.v
+    data_memory.v
+    data_memory_top.v
+    write_back_cycle.v
+    hazard_unit.v
+    mux31.v
+}
+	initial begin
+	      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../CORE/im_mem0.v' on line 28, column 8.
+        : The following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - checker block
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+	initial begin
+	      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../CORE/im_mem1.v' on line 32, column 8.
+	initial begin
+	      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../CORE/im_mem2.v' on line 29, column 8.
+	initial begin
+	      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../CORE/im_mem3.v' on line 27, column 8.
+        initial begin
+              |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../CORE/register_file.v' on line 14, column 15.
+               initial begin
+                     |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '../CORE/data_memory.v' on line 11, column 22.
+@file(top_1_2GHz.tcl) 60: set_db information_level 10
+  Setting attribute of root '/': 'information_level' = 10
+@file(top_1_2GHz.tcl) 61: set_db auto_ungroup both
+  Setting attribute of root '/': 'auto_ungroup' = both
+@file(top_1_2GHz.tcl) 62: set_db merge_combinational_hier_instances true
+  Setting attribute of root '/': 'merge_combinational_hier_instances' = true
+@file(top_1_2GHz.tcl) 63: set_db map_fancy_names 1
+  Setting attribute of root '/': 'map_fancy_names' = 1
+@file(top_1_2GHz.tcl) 64: elaborate $DESIGN
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX1' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX1'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX2'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX2'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'B' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'A' and 'S' in libcell 'ADDFHX4' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX4'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHXL' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CI' and 'S' in libcell 'ADDFHXL' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX4'.
+  Libraries have 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'riscv_scalar_cryptography_proscessor' from file '../CORE/riscv_scalar_cryptography_processor.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'pc_top' from file '../CORE/pc_top.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'pc_XLEN32' from file '../CORE/pc.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'pc_add_XLEN32' from file '../CORE/pc_adder.v'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'pc_in_wide' [33] doesn't match the width of right hand side [32] in assignment in file '../CORE/pc_adder.v' on line 18.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=3 Z=33) at line 18 in the file '../CORE/pc_adder.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=3 Z=33) at line 18 in the file '../CORE/pc_adder.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'instruction_memory_top' from file '../CORE/im_mem_top.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'im_mem0' from file '../CORE/im_mem0.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'im_mem0' in file '../CORE/im_mem0.v' on line 11.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'im_mem1' from file '../CORE/im_mem1.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'im_mem1' in file '../CORE/im_mem1.v' on line 12.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'im_mem2' from file '../CORE/im_mem2.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'im_mem2' in file '../CORE/im_mem2.v' on line 11.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'im_mem3' from file '../CORE/im_mem3.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'im_mem3' in file '../CORE/im_mem3.v' on line 9.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'fetch_cycle' from file '../CORE/Fetch_cycle.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'riscv_control_unit' from file '../CORE/riscv_control_unit.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'gpr' from file '../CORE/register_file.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'gpr' in file '../CORE/register_file.v' on line 12.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'sign_extend' from file '../CORE/sign_extend.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'decode_cycle' from file '../CORE/decoder_cycle.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'mux' from file '../CORE/mux_21.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'crypto_engine' from file '../CORE/crypto_engine.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bitmanipulation_XLEN32' from file '../CORE/bitmanipulation.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_rol_XLEN32' from file '../CORE/bit_rol.v'.
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:GB/decoder/b2' is invalid for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=32 SH=5 Z=32) at line 34 in the file '../CORE/bit_rol.v' because the constraint '1' on the synthetic operator pin 'A' does not match the actual pin value 'bound'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/sll/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=32 SH=5 Z=32) at line 34 in the file '../CORE/bit_rol.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=32 SH=5 Z=32) at line 34 in the file '../CORE/bit_rol.v' will be considered in the following order: {'hdl_implementation:GB/sll/very_fast' (priority 1), 'hdl_implementation:GB/sll/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/srl/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SRL_VLOG_UNS_OP' (pin widths: A=32 SH=5 Z=32).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SRL_VLOG_UNS_OP' (pin widths: A=32 SH=5 Z=32) will be considered in the following order: {'hdl_implementation:GB/srl/very_fast' (priority 1), 'hdl_implementation:GB/srl/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/sub_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SUB_UNS_OP' (pin widths: A=6 B=5 Z=32) at line 35 in the file '../CORE/bit_rol.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SUB_UNS_OP' (pin widths: A=6 B=5 Z=32) at line 35 in the file '../CORE/bit_rol.v' will be considered in the following order: {'hdl_implementation:GB/sub_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/sub_unsigned/medium' (priority 1), 'hdl_implementation:GB/sub_unsigned/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_ror_XLEN32' from file '../CORE/bit_ror.v'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/srl/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SRL_VLOG_UNS_OP' (pin widths: A=32 SH=5 Z=32) at line 57 in the file '../CORE/bit_ror.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SRL_VLOG_UNS_OP' (pin widths: A=32 SH=5 Z=32) at line 57 in the file '../CORE/bit_ror.v' will be considered in the following order: {'hdl_implementation:GB/srl/very_fast' (priority 1), 'hdl_implementation:GB/srl/slow' (priority 1)}
+Info    : Skipping an invalid binding for a subprogram call. [CWD-21]
+        : The binding 'hdl_bind:GB/decoder/b2' is invalid for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=33 SH=6 Z=33) because the constraint '1' on the synthetic operator pin 'A' does not match the actual pin value 'bound'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/sll/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=33 SH=6 Z=33).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SLL_VLOG_UNS_OP' (pin widths: A=33 SH=6 Z=33) will be considered in the following order: {'hdl_implementation:GB/sll/very_fast' (priority 1), 'hdl_implementation:GB/sll/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/sub_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'SUB_UNS_OP' (pin widths: A=6 B=5 Z=32) at line 60 in the file '../CORE/bit_ror.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'SUB_UNS_OP' (pin widths: A=6 B=5 Z=32) at line 60 in the file '../CORE/bit_ror.v' will be considered in the following order: {'hdl_implementation:GB/sub_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/sub_unsigned/medium' (priority 1), 'hdl_implementation:GB/sub_unsigned/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_andn_XLEN32' from file '../CORE/bit_andn.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_orn_XLEN32' from file '../CORE/bit_orn.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_xnor_XLEN32' from file '../CORE/bit_xnor.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_pack_XLEN32' from file '../CORE/bit_pack.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_packh_XLEN32' from file '../CORE/bit_packh.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_zip_XLEN32' from file '../CORE/bit_zip.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_unzip_XLEN32' from file '../CORE/bit_unzip.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_brev8_XLEN32' from file '../CORE/bit_brev.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bit_rev8_XLEN32' from file '../CORE/bit_rev8.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'carry_less_mul_top_XLEN32' from file '../CORE/carry_less_engine.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' from file '../CORE/carry_less_multiplication.v'.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'carry_less_mul_WIDTH_IN32_WIDTH_OUT64' in file '../CORE/carry_less_multiplication.v' on line 100.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'aes_engine_XLEN32' from file '../CORE/aes_engine.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'aes32esi' from file '../CORE/aes32esi.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'aes_sbox' from file '../CORE/sbox_values.v'.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'aes32esi' in file '../CORE/aes32esi.v' on line 42.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'aes32esi' in file '../CORE/aes32esi.v' on line 43.
+Info    : Replaced logic with a constant value. [CDFG-771]
+        : Constant Replacement in Module 'aes32esi' in file '../CORE/aes32esi.v' on line 44.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'aes32esmi' from file '../CORE/aes32esmi.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'mix_op' from file '../CORE/mix_op.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'sha_engine' from file '../CORE/sha_engine.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'sha256_round' from file '../CORE/sha256_round.v'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'T1_wide' [35] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_round.v' on line 100.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'T2_wide' [34] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_round.v' on line 101.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'ao_wide' [33] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_round.v' on line 106.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'eo_wide' [33] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_round.v' on line 107.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 106 in the file '../CORE/sha256_round.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 106 in the file '../CORE/sha256_round.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 107 in the file '../CORE/sha256_round.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 107 in the file '../CORE/sha256_round.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 100 in the file '../CORE/sha256_round.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 100 in the file '../CORE/sha256_round.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 100 in the file '../CORE/sha256_round.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 100 in the file '../CORE/sha256_round.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=35) at line 100 in the file '../CORE/sha256_round.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=35) at line 100 in the file '../CORE/sha256_round.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=35 B=32 Z=35) at line 100 in the file '../CORE/sha256_round.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=35 B=32 Z=35) at line 100 in the file '../CORE/sha256_round.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 101 in the file '../CORE/sha256_round.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 101 in the file '../CORE/sha256_round.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'sha256_msg_datapath' from file '../CORE/sha256_msg_datapath.v'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'w0_wide' [34] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_msg_datapath.v' on line 144.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'w1_wide' [34] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_msg_datapath.v' on line 147.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'w2_wide' [34] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_msg_datapath.v' on line 150.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'w3_wide' [34] doesn't match the width of right hand side [32] in assignment in file '../CORE/sha256_msg_datapath.v' on line 153.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/lt_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'LT_UNS_OP' (pin widths: A=7 B=5 Z=1) at line 155 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'LT_UNS_OP' (pin widths: A=7 B=5 Z=1) at line 155 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/lt_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/lt_unsigned/medium' (priority 1), 'hdl_implementation:GB/lt_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 143 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 143 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 143 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 143 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 144 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 144 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 146 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 146 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 146 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 146 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 147 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 147 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 149 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 149 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 149 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 149 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 150 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 150 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 152 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=32 B=32 Z=33) at line 152 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 152 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=33 B=32 Z=34) at line 152 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 153 in the file '../CORE/sha256_msg_datapath.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=34 B=32 Z=34) at line 153 in the file '../CORE/sha256_msg_datapath.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'mux31' from file '../CORE/mux_31.v'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 8 in the file '../CORE/mux_31.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 8 in the file '../CORE/mux_31.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 9 in the file '../CORE/mux_31.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 9 in the file '../CORE/mux_31.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 10 in the file '../CORE/mux_31.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 10 in the file '../CORE/mux_31.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 11 in the file '../CORE/mux_31.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 11 in the file '../CORE/mux_31.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'execute_cycle' from file '../CORE/execute_cycle.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'data_memory_top' from file '../CORE/data_memory_top.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'data_memory' from file '../CORE/data_memory.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'data_memory' in file '../CORE/data_memory.v' on line 9.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'write_back_cycle' from file '../CORE/write_back_cycle.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'forward_unit' from file '../CORE/hazard_unit.v'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/nequal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'NE_UNS_OP' (pin widths: A=5 B=1 Z=1) at line 28 in the file '../CORE/hazard_unit.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'NE_UNS_OP' (pin widths: A=5 B=1 Z=1) at line 28 in the file '../CORE/hazard_unit.v' will be considered in the following order: {'hdl_implementation:GB/nequal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 28 in the file '../CORE/hazard_unit.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 28 in the file '../CORE/hazard_unit.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/nequal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'NE_UNS_OP' (pin widths: A=5 B=1 Z=1) at line 30 in the file '../CORE/hazard_unit.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'NE_UNS_OP' (pin widths: A=5 B=1 Z=1) at line 30 in the file '../CORE/hazard_unit.v' will be considered in the following order: {'hdl_implementation:GB/nequal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 30 in the file '../CORE/hazard_unit.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 30 in the file '../CORE/hazard_unit.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 33 in the file '../CORE/hazard_unit.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 33 in the file '../CORE/hazard_unit.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 35 in the file '../CORE/hazard_unit.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=5 B=5 Z=1) at line 35 in the file '../CORE/hazard_unit.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'mux3_1' from file '../CORE/mux31.v'.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 6 in the file '../CORE/mux31.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 6 in the file '../CORE/mux31.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 7 in the file '../CORE/mux31.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=1 Z=1) at line 7 in the file '../CORE/mux31.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 8 in the file '../CORE/mux31.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=2 B=2 Z=1) at line 8 in the file '../CORE/mux31.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'riscv_scalar_cryptography_proscessor'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+        Applying wireload models.
+        Computing net loads.
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:            32             57                                      elaborate
+@file(top_1_2GHz.tcl) 65: check_timing_intent
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 17.22-s017_1
+  Generated on:           Mar 02 2019  09:59:11 pm
+  Module:                 riscv_scalar_cryptography_proscessor
+  Technology libraries:   fast_vdd1v0 1.0
+                          slow_vdd1v0 1.0
+  Operating conditions:   PVT_1P1V_0C (balanced_tree)
+  Wireload mode:          enclosed
+  Area mode:              timing library
+============================================================
+
+-------------------------------------------------------------------------------
+Sequential clock pins without clock waveform
+
+The following sequential clock pins have no clock waveform driving them.  No    
+timing constraints will be derived for paths leading to or from these pins.     
+
+pin:riscv_scalar_cryptography_proscessor/decoder_cycle/alu_opcode_reg[0]/clk
+pin:riscv_scalar_cryptography_proscessor/decoder_cycle/alu_opcode_reg[1]/clk
+pin:riscv_scalar_cryptography_proscessor/decoder_cycle/alu_opcode_reg[2]/clk
+  ... 17737 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Inputs without clocked external delays
+
+The following primary inputs have no clocked external delays.  As a result the  
+timing paths leading from the ports have no timing constraints derived from     
+clock waveforms.  The'external_delay' command is used to create new external    
+delays.                                                                         
+
+port:riscv_scalar_cryptography_proscessor/clk
+port:riscv_scalar_cryptography_proscessor/inst_write_en[0]
+port:riscv_scalar_cryptography_proscessor/inst_write_en[10]
+  ... 31 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Outputs without clocked external delays
+
+The following primary outputs have no clocked external delays.  As a result the 
+timing paths leading to the ports have no timing constraints derived from clock 
+waveforms.  The'external_delay' command is used to create new external delays.  
+
+port:riscv_scalar_cryptography_proscessor/write_out[0]
+port:riscv_scalar_cryptography_proscessor/write_out[10]
+port:riscv_scalar_cryptography_proscessor/write_out[11]
+  ... 29 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Inputs without external driver/transition
+
+The following primary inputs have no external driver or input transition set.   
+As a result the transition on the ports will be assumed as zero. The            
+'external_driver' attribute is used to add and external driver or the           
+'fixed_slew' attribute to add an external transition.                           
+
+port:riscv_scalar_cryptography_proscessor/clk
+port:riscv_scalar_cryptography_proscessor/inst_write_en[0]
+port:riscv_scalar_cryptography_proscessor/inst_write_en[10]
+  ... 31 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Outputs without external load
+
+The following primary outputs have no external load set. As a result the load   
+on the ports will be assumed as zero. The 'external_pin_cap' attribute is used  
+to add and external pin cap.                                                    
+
+port:riscv_scalar_cryptography_proscessor/write_out[0]
+port:riscv_scalar_cryptography_proscessor/write_out[10]
+port:riscv_scalar_cryptography_proscessor/write_out[11]
+  ... 29 other warnings in this category.
+ Use the -verbose option for more details.
+-------------------------------------------------------------------------------
+
+
+Lint summary
+ Unconnected/logic driven clocks                                  0
+ Sequential data pins driven by a clock signal                    0
+ Sequential clock pins without clock waveform                 17740
+ Sequential clock pins with multiple clock waveforms              0
+ Generated clocks without clock waveform                          0
+ Generated clocks with incompatible options                       0
+ Generated clocks with multi-master clock                         0
+ Paths constrained with different clocks                          0
+ Loop-breaking cells for combinational feedback                   0
+ Nets with multiple drivers                                       0
+ Timing exceptions with no effect                                 0
+ Suspicious multi_cycle exceptions                                0
+ Pins/ports with conflicting case constants                       0
+ Inputs without clocked external delays                          34
+ Outputs without clocked external delays                         32
+ Inputs without external driver/transition                       34
+ Outputs without external load                                   32
+ Exceptions with invalid timing start-/endpoints                  0
+
+                                                  Total:      17872
+
+@file(top_1_2GHz.tcl) 66: check_design 
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+ Summary
+ ------- 
+
+                Name                 Total 
+-------------------------------------------
+Unresolved References                    0 
+Empty Modules                            0 
+Unloaded Port(s)                         0 
+Unloaded Sequential Pin(s)               0 
+Unloaded Combinational Pin(s)            0 
+Assigns                                412 
+Undriven Port(s)                         0 
+Undriven Leaf Pin(s)                     0 
+Undriven hierarchical pin(s)             0 
+Multidriven Port(s)                      0 
+Multidriven Leaf Pin(s)                  0 
+Multidriven hierarchical Pin(s)          0 
+Multidriven unloaded net(s)              0 
+Constant Port(s)                         0 
+Constant Leaf Pin(s)                     0 
+Constant hierarchical Pin(s)         15046 
+Preserved leaf instance(s)               0 
+Preserved hierarchical instance(s)       0 
+Libcells with no LEF cell                0 
+Physical (LEF) cells with no libcell     0 
+Subdesigns with long module name         0 
+Physical only instance(s)                0 
+Logical only instance(s)                 0 
+
+  Done Checking the design.
+@file(top_1_2GHz.tcl) 68: read_sdc {../SDC/top_10GHz.sdc}
+Error: Unable to open ../SDC/top_10GHz.sdc
+#@ End verbose source TCL/top_1_2GHz.tcl
+Failed on read_sdc
+@genus:root: 2> wxit
+invalid command name "wxit"
+@genus:root: 3> q
+Normal exit.

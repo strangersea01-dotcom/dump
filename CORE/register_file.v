@@ -11,9 +11,9 @@ module gpr ( input clk,
 //	integer i;
          reg[31:0] mem[0:31];
 
-       /* initial begin
+        initial begin
              $readmemh("../MEMORY/gpr.hex",mem);
-         end*/
+         end
 
          assign rs1_data = mem[rs1_addr];
          assign rs2_data = mem[rs2_addr];

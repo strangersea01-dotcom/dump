@@ -12,9 +12,75 @@ B3
 B3
 B3
 B3
+/*
 93
 93
 93
 93
 93
 93
+33 //rol x16, x1, x2
+B3 //ror x17, x16, x3
+33 //andn x18, x17, x4
+B3 //orn x19, x18, x5
+33 //xnor x20,x19,x6
+B3 //pack x21,x20,x7
+33 //packh x22,x21,x8
+33 //unzip x24,x23,x10
+B3 //rol x8,x7,x6
+B3 //clmulx9,x8,x5
+B3 //aes32esi x10,x9,x4 
+13 //sha256sig0 x11,x10
+B3 //xnor x12,x11,x3
+B3 //aes32esmi x13,x12,x2
+93 //sha256sum1 x14,x13
+B3 //clmulh   x15,x14,x1
+33 //xnor x12, x12, x4
+33 //rol   x16, x1,  x2
+B3 //ror   x17, x16, x3
+33 //andn  x18, x17, x4
+B3 //orn   x19, x18, x5
+33 //xnor  x20, x19, x6
+B3 //pack  x21, x20, x7
+33 //packh x22, x21, x8
+B3 //rol   x23, x22, x9
+33 //ror   x24, x23, x10
+B3 //andn  x25, x24, x11
+33 //orn   x26, x25, x12
+B3 //xnor  x27, x26, x13
+33 //pack  x28, x27, x14
+B3 //packh x29, x28, x15
+33 //rol   x30, x29, x16
+B3 //ror   x31, x30, x17
+B3 //clmul   x1,  x31, x18
+33 //clmulh  x2,  x1,  x19
+B3 //clmul   x3,  x2,  x20
+33 //clmulh  x4,  x3,  x21
+B3 //clmul   x5,  x4,  x22
+33 //clmulh  x6,  x5,  x23
+B3 //clmul   x7,  x6,  x24
+33 //clmulh  x8,  x7,  x25
+B3 //clmul   x9,  x8,  x26
+33 //clmulh  x10, x9,  x27
+B3
+33
+B3
+33
+B3
+33
+B3
+33
+B3
+33
+B3
+B3
+B3
+B3
+B3
+B3
+B3
+B3
+B3
+B3
+*/
+
