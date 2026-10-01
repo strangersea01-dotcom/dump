@@ -542,9 +542,11 @@ test_done:
     li gp, 1
     ecall
 write_tohost:
-    sw gp, tohost, t5
+    la   t5, tohost
+    sw   gp, 0(t5)
 _exit:
     j write_tohost
-.section .data
+
+.section .tohost, "aw", @progbits
 .align 6; .global tohost; tohost: .dword 0;
 .align 6; .global fromhost; fromhost: .dword 0;
